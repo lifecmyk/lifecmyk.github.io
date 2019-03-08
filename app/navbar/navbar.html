@@ -1,0 +1,32 @@
+<img ng-click="openMenu()" src="./assets/img/menu-left.svg" alt="Menu" class="menu-left" />
+<img ng-click="openMenu()" src="./assets/img/menu-right.svg" alt="Menu" class="menu-right" />
+
+<div ng-if="menu" class="menu col j-center">
+  <img src="../../assets/img/logo.svg" alt="THEMESIS" class="logo" />
+  <div class="row">
+    <ul class="col">
+      <li>home</li>
+      <li>teaser (sinopsis)</li>
+      <li>proyecto</li>
+      <li>situación actual</li>
+      <li>financiación</li>
+    </ul>
+
+    <ul class="col">
+      <li>blog</li>
+      <li>partners</li>
+      <li>contacto (newsletter)</li>
+      <br><br><br>
+      <li class="social flex a-center">
+        <p>Síguenos en</p>
+        <img src="./assets/img/facebook.svg" alt="facebook" />
+        <img src="./assets/img/insta.svg" alt="instagram" />
+        <img src="./assets/img/twitter.svg" alt="twitter" />
+        <img src="./assets/img/vimeo.svg" alt="vimeo" />
+      </li>
+      <li class="politica"><p><a href="#">Politica de privacidad</a> & <a href="#">aviso legal</a></p></li>
+    </ul>
+  </div>
+
+  <button ng-click="closeMenu()" class="pri outline">CERRAR</button>
+</div>

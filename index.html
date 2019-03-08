@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+  <head>
+    <!-- <script>
+        if (location.hostname !== "localhost" && location.protocol !== "https:") location.protocol = "https:";
+    </script> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Web assets -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#111" />
+    <link rel="apple-touch-icon" type="image/png" href="./assets/img/mobile.png" />
+    <link rel="icon" type="image/png" href="./assets/img/mobile.png" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <meta name="apple-mobile-web-app-title" content="THEMESIS | Film" />
+    <!-- Preload -->
+    <meta name="fragment" content="!" />
+    <link rel="preload" href="./assets/css/main.css" as="style" />
+    <link rel="preload" href="./assets/font/circular.css" as="style" />
+
+    <!-- RUP MCTOFU -->
+
+    <!-- SEO -->
+    <title>THEMESIS | Film</title>
+    <meta name="author" content="rup | rup@kactusstudio.com" />
+    <meta
+      name="description"
+      content="¿Qué es THEMESIS? THEMESIS es un proyecto de varios estudiantes del TecnoCampus, que consiste en la realización de un largometraje. Para este propósito se cuenta con la ayuda de profesionales del sector y de diversos profesores de la universidad."
+    />
+    <meta name="keywords" content="themesis, película, movie, film, cristian beteta" />
+    <meta property="og:site_name" content="THEMESIS | Film" />
+    <meta property="og:title" content="THEMESIS | Film" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://themesisfilm.com" />
+    <meta property="og:image" content="./assets/img/mobile.png" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/m.navbar.css" media="only screen and (max-width: 768px)" />
+    <!-- Font / Icons -->
+    <link rel="stylesheet" href="./assets/font/circular.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+  </head>
+
+  <body class="test">
+    <nav ng-controller="navController" ng-include="'./app/navbar/navbar.html'"></nav>
+    <main ui-view></main>
+
+    <!-- Vendors -->
+    <script src="./assets/js/fawn.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.19/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/oclazyload/1.1.0/ocLazyLoad.require.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/oclazyload/1.1.0/ocLazyLoad.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
+    <!-- Bundle -->
+    <script src="./assets/js/bundle.js"></script>
+  </body>
+</html>

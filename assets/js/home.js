@@ -1,0 +1,2 @@
+"use strict";angular.module("app").controller("homeController",function($scope){info("Home loaded");var mobilevideo=document.getElementById("bg");mobilevideo.setAttribute("playsinline",""),mobilevideo.setAttribute("muted","");var ambient=document.getElementById("ambient");ambient.volume=.1,$scope.audioOn=!0,$scope.switchAudio=function(){ambient.volume=ambient.volume?0:.1,$scope.audioOn=!$scope.audioOn,_(".audio").tog("animated")}});
+//# sourceMappingURL=home.js.map

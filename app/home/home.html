@@ -1,0 +1,56 @@
+<div class="home-box scroll">
+  <div class="video">
+    <video autoplay loop id="bg" src="./assets/img/bgvideo.mp4" type="video/mp4"></video>
+    <div class="overlay"></div>
+    <audio controls autoplay loop id="ambient">
+      <source src="./assets/img/ambient.wav" type="audio/wav" />
+    </audio>
+  </div>
+
+  <div id="landing" class="col f-center">
+    <div class="audio flex f-center animated">
+      <i ng-if="!audioOn" ng-click="switchAudio()" class="fas fa-microphone-slash"></i>
+      <i ng-if="audioOn" ng-click="switchAudio()" class="fas fa-microphone"></i>
+    </div>
+
+    <img class="logo" src="../../assets/img/logo.svg" alt="THEMESIS" />
+    <div class="row j-center">
+      <a href="#" class="btn pri outline">VER TEASER</a>
+      <a href="#" class="btn">visitar blog</a>
+    </div>
+
+    <div class="gradient"></div>
+
+    <div class="social flex j-end a-center">
+      <p>Síguenos en</p>
+      <img src="./assets/img/facebook.svg" alt="facebook" />
+      <img src="./assets/img/insta.svg" alt="instagram" />
+      <img src="./assets/img/twitter.svg" alt="twitter" />
+      <img src="./assets/img/vimeo.svg" alt="vimeo" />
+    </div>
+
+    <div class="scroller"></div>
+  </div>
+
+  <div id="teaser" class="col f-center">
+    <h1>teaser</h1>
+
+    <iframe
+      src="https://player.vimeo.com/video/322162668"
+      width="900"
+      height="480"
+      frameborder="0"
+      webkitallowfullscreen
+      mozallowfullscreen
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div id="sinopsis" class="col f-center">
+    <h1>sinopsis</h1>
+    <p>
+      “Belva sobrevive atada a la prostitución. Marta no comprende la banalidad de quienes le rodean. Nancy es esclava
+      de su pasado. Kaseem no logra encajar en su comunidad. Ante un mundo injusto, la suerte no se busca, se crea.”
+    </p>
+  </div>
+</div>
