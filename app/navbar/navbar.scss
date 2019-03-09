@@ -95,8 +95,7 @@ nav {
       transition: 0.2s;
 
       &:hover {
-        background: $link !important;
-        border-color: $link !important;
+        opacity: .5;
       }
     }
   }

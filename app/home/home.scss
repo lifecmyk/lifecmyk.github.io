@@ -250,6 +250,7 @@
     height: auto;
     padding: 40px;
     color: #fff;
+    margin-bottom: 150px;
 
     h1 {
       color: #fff;
@@ -283,6 +284,40 @@
       }
     }
   }
+
+  #partners {
+    min-height: 80vh;
+    height: auto;
+    padding: 40px;
+    color: #fff;
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .card {
+      padding: 0 40px;
+      margin-bottom: 80px;
+
+      img {
+        max-width: 80vw;
+        height: 70px;
+        object-fit: contain;
+        object-position: center;
+        margin-bottom: 20px;
+      }
+
+      a {
+        text-decoration: underline;
+        transition: .2s;
+
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+  }
+
 }
 
 @keyframes bounce {
