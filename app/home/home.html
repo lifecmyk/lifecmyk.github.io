@@ -7,7 +7,7 @@
     </audio>
   </div>
 
-  <div id="landing" class="col f-center">
+  <div id="home" class="col f-center">
     <div class="audio flex f-center animated">
       <i ng-if="!audioOn" ng-click="switchAudio()" class="fas fa-microphone-slash"></i>
       <i ng-if="audioOn" ng-click="switchAudio()" class="fas fa-microphone"></i>
@@ -15,8 +15,8 @@
 
     <img class="logo" src="../../assets/img/logo.svg" alt="THEMESIS" />
     <div class="row j-center">
-      <a href="#" class="btn pri outline">VER TEASER</a>
-      <a href="#" class="btn">visitar blog</a>
+      <a ng-click="scrollTo('teaser')" class="btn pri outline">VER TEASER</a>
+      <a  href="#" class="btn">visitar blog</a>
     </div>
 
     <div class="gradient"></div>
@@ -37,8 +37,6 @@
 
     <iframe
       src="https://player.vimeo.com/video/322162668"
-      width="900"
-      height="480"
       frameborder="0"
       webkitallowfullscreen
       mozallowfullscreen

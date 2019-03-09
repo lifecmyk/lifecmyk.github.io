@@ -1,12 +1,11 @@
 <img ng-click="openMenu()" src="./assets/img/menu-left.svg" alt="Menu" class="menu-left" />
-<img ng-click="openMenu()" src="./assets/img/menu-right.svg" alt="Menu" class="menu-right" />
 
 <div ng-if="menu" class="menu col j-center">
   <img src="../../assets/img/logo.svg" alt="THEMESIS" class="logo" />
   <div class="row">
     <ul class="col">
-      <li>home</li>
-      <li>teaser (sinopsis)</li>
+      <li ng-click="scrollTo('home')">home</li>
+      <li ng-click="scrollTo('teaser')">teaser (sinopsis)</li>
       <li>proyecto</li>
       <li>situación actual</li>
       <li>financiación</li>
@@ -16,7 +15,7 @@
       <li>blog</li>
       <li>partners</li>
       <li>contacto (newsletter)</li>
-      <br><br><br>
+      <br><br>
       <li class="social flex a-center">
         <p>Síguenos en</p>
         <img src="./assets/img/facebook.svg" alt="facebook" />

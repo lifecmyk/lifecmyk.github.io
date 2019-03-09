@@ -2,22 +2,12 @@
 
 nav {
   .menu-left {
-    left: -23px;
+    left: -15px;
     transform-origin: left;
 
     &:hover {
       left: 0;
       transform: scale(1.2);
-    }
-  }
-
-  .menu-right {
-    right: -6px;
-
-    &:hover {
-      right: 0;
-      transform: scale(1.2);
-      transform-origin: right;
     }
   }
 
@@ -54,7 +44,7 @@ nav {
 
       li {
         cursor: pointer;
-        font-size: 50px;
+        font-size: 3vw;
         font-weight: bold;
         margin-bottom: 10px;
         transition: 0.3s;

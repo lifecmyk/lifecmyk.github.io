@@ -19,7 +19,7 @@ app.config(($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) => {
           },
           {
             href: "./assets/css/m.home.css",
-            media: "screen and (max-width : 768px)"
+            media: "screen and (max-width : 1200px)"
           }
         ]);
       },

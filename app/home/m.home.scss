@@ -1,1 +1,47 @@
 @import "../../assets/scss/vars";
+
+.home-box {
+  #home {
+    .logo {
+      width: 70%;
+    }
+
+    .social {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .scroller {
+      bottom: 100px;
+    }
+  }
+
+  #teaser {
+    height: auto;
+    padding: 30% 0;
+
+    h1 {
+      font-size: 60px;
+      margin-top: 0;
+    }
+
+    iframe {
+      width: 85%;
+      height: 25vh;
+      margin: 0 auto;
+    }
+  }
+  
+  #sinopsis {
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+  }
+}

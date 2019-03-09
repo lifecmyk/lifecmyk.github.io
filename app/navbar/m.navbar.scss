@@ -1,1 +1,42 @@
 @import "../../assets/scss/vars";
+
+nav {
+  [class*="menu-"] {
+    top: 40px;
+    left: -5px;
+    margin: 0;
+    height: 150px;
+    opacity: 0.2;
+  }
+
+  .menu {
+    .logo {
+      width: 70%;
+      margin-bottom: 40px;
+    }
+
+    ul {
+      margin: 0;
+
+      &:last-of-type {
+        margin-bottom: 40px;
+      }
+
+      li {
+        font-size: 22px;
+        margin-bottom: 5px;
+      }
+
+      .social {
+        margin-bottom: 15px;
+      }
+    }
+
+    button {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 150px;
+    }
+  }
+}
