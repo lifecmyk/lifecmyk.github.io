@@ -1,5 +1,40 @@
 @import "../../assets/scss/vars";
 
+.cookies {
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1300px;
+  max-width: 90%;
+  background: rgba(#111, .9);
+  border-radius: 7px;
+  color: #999;
+  padding: 20px;
+  opacity: 0;
+  animation-delay: 1s !important;
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+  z-index: 999;
+
+  p {
+    font-family: "Circular Std";
+    font-weight: lighter;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  button {
+    color: #fff !important;
+    font-size: 14px;
+    border-radius: 7px;
+    padding: 10px 15px !important;
+  }
+}
+
 .home-box {
   h1 {
     font-size: 150px;
@@ -8,6 +43,11 @@
     background-clip: text;
     color: transparent !important;
     filter: saturate(0) contrast(105%);
+  }
+
+  a[href="https://www.verkami.com/"],
+  a[href="http://salondelcine.com/"] {
+    text-decoration: underline;
   }
 
   .video {
@@ -46,13 +86,14 @@
 
     .audio {
       cursor: pointer;
-      position: absolute;
+      position: fixed;
       top: 40px;
       right: 40px;
       width: 30px;
       height: 30px;
       color: #fff;
       border-radius: 50%;
+      z-index: 1;
 
       i {
         font-size: 24px;
@@ -309,15 +350,111 @@
 
       a {
         text-decoration: underline;
-        transition: .2s;
+        transition: 0.2s;
 
         &:hover {
-          opacity: .5;
+          opacity: 0.5;
         }
       }
     }
   }
 
+  #contacto {
+    min-height: 80vh;
+    height: auto;
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    #mc_embed_signup {
+      width: 80%;
+      max-width: 800px;
+      margin-bottom: 100px;
+
+      #mc_embed_signup_scroll {
+        width: 100%;
+      }
+
+      h2,
+      label,
+      input {
+        text-align: center;
+        color: #fff;
+      }
+
+      h2 {
+        margin-bottom: 40px;
+      }
+
+      input[type="email"] {
+        width: 80vw;
+        max-width: 500px;
+        font-family: monospace;
+        border: none;
+        border-radius: none;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 40px;
+        padding: 15px 30px !important;
+      }
+
+      input[type="submit"] {
+        width: 200px;
+        margin: 0 auto;
+        color: #fff;
+        border: 2px solid #fff !important;
+        padding: 15px 30px !important;
+        border-radius: 7px;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    background: #111;
+    padding: 40px;
+    color: #fff;
+
+    .logo {
+      width: 20%;
+      margin-bottom: 40px;
+    }
+
+    a {
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    .contact {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .social {
+      height: 20px;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      p {
+        margin-right: 10px;
+      }
+
+      img {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin-left: 10px;
+        transition: 0.2s;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
 }
 
 @keyframes bounce {
@@ -341,7 +478,7 @@
     color: rgba(#fff, 1);
   }
   50% {
-    color: rgba(#fff, 0.6);
+    color: rgba(#fff, 0.4);
   }
   100% {
     color: rgba(#fff, 1);

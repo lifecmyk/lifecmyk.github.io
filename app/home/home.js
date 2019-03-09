@@ -1,6 +1,8 @@
 angular.module("app").controller("homeController", function($scope, $timeout) {
   info("Home loaded");
 
+  $scope.hideCookies = false;
+
   $timeout(() => {
     let landVideo = document.getElementById("bg");
     landVideo.setAttribute("playsinline", "");
