@@ -1,16 +1,24 @@
-angular.module("app").controller("homeController", function($scope) {
+angular.module("app").controller("homeController", function($scope, $timeout) {
   info("Home loaded");
 
-  let mobilevideo = document.getElementById("bg");
-  mobilevideo.setAttribute("playsinline", "");
+  $timeout(() => {
+    let landVideo = document.getElementById("bg");
+    landVideo.setAttribute("playsinline", "");
+    landVideo.play();
+    
+    let bgVideo = document.getElementById("bgDust");
+    bgVideo.setAttribute("playsinline", "");
+    bgVideo.play();
 
-  let ambient = document.getElementById("ambient");
-  ambient.setAttribute("playsinline", "");
-  ambient.volume = 0.1;
-  $scope.audioOn = true;
+    let ambient = document.getElementById("ambient");
+    ambient.setAttribute("playsinline", "");
+    ambient.volume = 0.1;
+    $scope.audioOn = true;
+    ambient.play();
+  }, 2000);
 
   $scope.switchAudio = () => {
-    if(ambient.paused) {
+    if (ambient.paused) {
       ambient.play();
     } else {
       ambient.pause();
@@ -30,7 +38,6 @@ angular.module("app").controller("homeController", function($scope) {
   window.addEventListener("resize", e => {
     if (window.innerWidth <= 1200) {
       $scope.mobile = true;
-      ambient.volume = 0.1;
       $scope.audioOn = true;
       _(".audio").tog("animated");
     } else {

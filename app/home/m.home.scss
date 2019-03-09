@@ -2,6 +2,8 @@
 
 .home-box {
   #home {
+    margin-bottom: 10vh;
+    
     .logo {
       width: 70%;
     }
@@ -20,7 +22,6 @@
 
   #teaser {
     height: auto;
-    padding: 30% 0;
     margin-bottom: 10vh;
 
     h1 {
@@ -38,15 +39,12 @@
   #sinopsis {
     margin-bottom: 50px;
     h1 {
-      font-size: 40px;
-      background: $ter;
-      padding-left: 60px;
+      font-size: 60px;
     }
 
     p {
       font-size: 16px;
       line-height: 1.4;
-      padding: 10px 20px 20px 60px;
     }
   }
 
