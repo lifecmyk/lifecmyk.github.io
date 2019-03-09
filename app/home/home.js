@@ -3,20 +3,26 @@ angular.module("app").controller("homeController", function($scope) {
 
   let mobilevideo = document.getElementById("bg");
   mobilevideo.setAttribute("playsinline", "");
-  mobilevideo.setAttribute("muted", "");
 
   let ambient = document.getElementById("ambient");
+  ambient.setAttribute("playsinline", "");
   ambient.volume = 0.1;
   $scope.audioOn = true;
 
   $scope.switchAudio = () => {
-    ambient.volume = ambient.volume ? 0 : 0.1;
+    if(ambient.paused) {
+      ambient.play();
+    } else {
+      ambient.pause();
+    }
     $scope.audioOn = !$scope.audioOn;
     _(".audio").tog("animated");
   };
 
   if (window.innerWidth <= 1200) {
     $scope.mobile = true;
+    $scope.audioOn = false;
+    _(".audio").tog("animated");
   } else {
     $scope.mobile = false;
   }
@@ -24,6 +30,9 @@ angular.module("app").controller("homeController", function($scope) {
   window.addEventListener("resize", e => {
     if (window.innerWidth <= 1200) {
       $scope.mobile = true;
+      ambient.volume = 0.1;
+      $scope.audioOn = true;
+      _(".audio").tog("animated");
     } else {
       $scope.mobile = false;
     }
