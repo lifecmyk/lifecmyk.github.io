@@ -1,8 +1,8 @@
 @import "../../assets/scss/vars";
 
-
 .legal-box {
   .content {
+    width: 75%;
     padding: 60px 0;
 
     .logo {
@@ -11,11 +11,21 @@
 
     h1 {
       font-size: 40px;
+      
+      &:last-of-type {
+        padding-top: 10vh;
+      }
     }
 
     p {
       text-align: left;
-      margin-bottom: 10vh;
     }
   }
+}
+
+.back-btn {
+  top: 40px;
+  left: -5px;
+  margin: 0;
+  height: 150px;
 }
