@@ -1,18 +1,26 @@
 angular.module("app").controller("homeController", function($scope, $timeout) {
   info("Home loaded");
 
-  $scope.hideCookies = false;
+  _(".menu-left").del("menu-hide");
+
+  let landVideo = document.getElementById("bg");
+  let bgVideo = document.getElementById("bgDust");
+  let ambient = document.getElementById("ambient");
+
+  $scope.acceptCookies = () => {
+    $scope.hideCookies = true;
+    localStorage.cookies = true;
+  };
+
+  $scope.hideCookies = localStorage.cookies;
 
   $timeout(() => {
-    let landVideo = document.getElementById("bg");
     landVideo.setAttribute("playsinline", "");
     landVideo.play();
-    
-    let bgVideo = document.getElementById("bgDust");
+
     bgVideo.setAttribute("playsinline", "");
     bgVideo.play();
 
-    let ambient = document.getElementById("ambient");
     ambient.setAttribute("playsinline", "");
     ambient.volume = 0.1;
     $scope.audioOn = true;

@@ -2,10 +2,10 @@
   <p>
     Esta web almacena cookies en tu ordenador para mejorar la página y para ofrecerte servicios más personalizados,
     tanto en esta web como en otros canales online. Consientes la recopilación de cookies y el tratamiento de las mismas
-    en caso de continuar navegando por nuestra página web. Puedes acceder a nuestra Política de privacidad y cookies
-    para obtener más información.
+    en caso de continuar navegando por nuestra página web. Puedes acceder a nuestra
+    <a ui-sref="legal">Política de privacidad</a> y cookies para obtener más información.
   </p>
-  <button class="pri outline" ng-click="hideCookies = true">Continuar navegando</button>
+  <button class="pri outline" ng-click="acceptCookies()">Continuar navegando</button>
 </div>
 
 <div class="home-box scroll">
@@ -26,17 +26,21 @@
     <img class="logo" src="../../assets/img/logo.svg" alt="THEMESIS" />
     <div class="row j-center">
       <a ng-click="scrollTo('teaser')" class="btn pri outline">VER TEASER</a>
-      <a href="#" class="btn">visitar blog</a>
+      <a href="https://themesisfilm.wordpress.com/" class="btn">visitar blog</a>
     </div>
 
     <div class="gradient"></div>
 
     <div class="social flex j-end a-center">
       <p>Síguenos en</p>
-      <img src="./assets/img/facebook.svg" alt="facebook" />
-      <img src="./assets/img/insta.svg" alt="instagram" />
-      <img src="./assets/img/twitter.svg" alt="twitter" />
-      <img src="./assets/img/vimeo.svg" alt="vimeo" />
+      <a href="https://www.facebook.com/Themesis.film/" target="_blank"
+        ><img src="./assets/img/facebook.svg" alt="facebook"
+      /></a>
+      <a href="https://www.instagram.com/themesis.film/" target="_blank"
+        ><img src="./assets/img/insta.svg" alt="instagram"
+      /></a>
+      <a href="https://twitter.com/Themesisfilm" target="_blank"><img src="./assets/img/twitter.svg" alt="twitter"/></a>
+      <a href="https://vimeo.com/themesis" target="_blank"><img src="./assets/img/vimeo.svg" alt="vimeo"/></a>
     </div>
 
     <div class="scroller"></div>
@@ -212,7 +216,7 @@
     </div>
 
     <footer class="col a-center">
-      <img class="logo" src="../../assets/img/logo.svg" alt="THEMESIS" />
+      <img ng-click="scrollTo('home')" class="logo" src="../../assets/img/logo.svg" alt="THEMESIS" />
 
       <div class="row j-center">
         <p class="contact">
@@ -228,10 +232,16 @@
 
       <div class="social flex a-center">
         <p>Síguenos en</p>
-        <img src="./assets/img/facebook.svg" alt="facebook" />
-        <img src="./assets/img/insta.svg" alt="instagram" />
-        <img src="./assets/img/twitter.svg" alt="twitter" />
-        <img src="./assets/img/vimeo.svg" alt="vimeo" />
+        <a href="https://www.facebook.com/Themesis.film/" target="_blank"
+          ><img src="./assets/img/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/themesis.film/" target="_blank"
+          ><img src="./assets/img/insta.svg" alt="instagram"
+        /></a>
+        <a href="https://twitter.com/Themesisfilm" target="_blank"
+          ><img src="./assets/img/twitter.svg" alt="twitter"
+        /></a>
+        <a href="https://vimeo.com/themesis" target="_blank"><img src="./assets/img/vimeo.svg" alt="vimeo"/></a>
       </div>
     </footer>
   </div>

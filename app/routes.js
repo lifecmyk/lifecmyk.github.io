@@ -28,4 +28,27 @@ app.config(($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) => {
       }
     }
   });
+  
+  $stateProvider.state("legal", {
+    name: "legal",
+    url: "/legal",
+    controller: "legalController",
+    templateUrl: "./app/legal/legal.html",
+    resolve: {
+      loadCss: $css => {
+        return $css.add([
+          {
+            href: "./assets/css/legal.css"
+          },
+          {
+            href: "./assets/css/m.legal.css",
+            media: "screen and (max-width : 1200px)"
+          }
+        ]);
+      },
+      loadCtrl: $ocLazyLoad => {
+        return $ocLazyLoad.load("./assets/js/legal.js");
+      }
+    }
+  });
 });

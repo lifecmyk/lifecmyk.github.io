@@ -4,13 +4,13 @@ nav {
   .menu-left {
     left: -15px;
     transform-origin: left;
-    
+
     &:hover {
       left: 0;
       transform: scale(1.2);
     }
   }
-  
+
   [class*="menu-"] {
     cursor: pointer;
     position: fixed;
@@ -52,6 +52,11 @@ nav {
         &:hover {
           opacity: 0.5;
         }
+
+        .blog {
+          font-size: 3vw;
+          font-weight: bold;
+        }
       }
 
       .social {
@@ -81,8 +86,14 @@ nav {
         }
       }
 
-      .politica:hover {
-        opacity: 1;
+      .politica {
+        a {
+          text-decoration: underline;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
 
@@ -95,14 +106,14 @@ nav {
       transition: 0.2s;
 
       &:hover {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
   }
 }
 
 .menu.ng-enter {
-  transition: .5s ease-out all;
+  transition: 0.5s ease-out all;
   opacity: 0;
 }
 

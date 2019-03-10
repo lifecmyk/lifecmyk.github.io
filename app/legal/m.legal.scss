@@ -1,0 +1,21 @@
+@import "../../assets/scss/vars";
+
+
+.legal-box {
+  .content {
+    padding: 60px 0;
+
+    .logo {
+      margin-bottom: 5vh;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      text-align: left;
+      margin-bottom: 10vh;
+    }
+  }
+}

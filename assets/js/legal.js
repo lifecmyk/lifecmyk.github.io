@@ -1,0 +1,2 @@
+"use strict";angular.module("app").controller("legalController",function($scope){info("Legal loaded"),_(".menu-left").add("menu-hide"),$scope.showMenu=function(){_(".menu-left").del("menu-hide")}});
+//# sourceMappingURL=legal.js.map
