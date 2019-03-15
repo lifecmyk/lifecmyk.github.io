@@ -36,7 +36,7 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
         prevEl: ".swiper-button-prev"
       }
     });
-    
+
     let catering = new Swiper(".catering", {
       direction: "horizontal",
       speed: 800,
@@ -49,7 +49,7 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
         prevEl: ".swiper-button-prev"
       }
     });
-    
+
     let weare = new Swiper(".weare", {
       direction: "horizontal",
       speed: 800,
@@ -63,4 +63,16 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
       }
     });
   });
+
+  $("#flipbook").turn({
+    display: "single"
+  });
+
+  $scope.turnPrev = () => {
+    $("#flipbook").turn("previous");
+  }
+  
+  $scope.turnNext = () => {
+    $("#flipbook").turn("next");
+  }
 });

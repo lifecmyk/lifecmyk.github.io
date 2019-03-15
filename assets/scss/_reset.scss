@@ -105,20 +105,3 @@ h3 {
   font-weight: normal;
   @include type(15, 25);
 }
-
-//code showing
-code {
-  padding: 20px;
-  background: $title;
-  color: $bg;
-  border-radius: 3px;
-  width: 100%;
-  line-height: 1.2;
-  font-size: 14px;
-
-  span {
-    color: $success;
-    line-height: 1.2;
-    font-size: 14px;
-  }
-}

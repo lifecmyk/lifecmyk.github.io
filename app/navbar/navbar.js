@@ -2,8 +2,8 @@ angular.module("app").controller("navController", function($scope, $timeout) {
   info("Nav loaded");
 
   $scope.welcome = false;
-  
-  $timeout(()=> {
+
+  $timeout(() => {
     $scope.welcome = false;
   }, 3000);
 
@@ -25,7 +25,7 @@ angular.module("app").controller("navController", function($scope, $timeout) {
     _(".mob-menu").tog("active");
   };
 
-  $scope.scrollTo = (element) => {
+  /* $scope.scrollTo = (element) => {
     _(".scroll  ").scrollTo({
       behavior: "smooth",
       left: 0,
@@ -33,6 +33,5 @@ angular.module("app").controller("navController", function($scope, $timeout) {
     });
 
     _(".mob-menu").del("active");
-  }
-
+  } */
 });
