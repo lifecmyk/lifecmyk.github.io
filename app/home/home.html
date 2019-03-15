@@ -3,28 +3,22 @@
     <div class="overlay"></div>
     <div class="content col f-center">
       <img src="./assets/img/slim.svg" alt="Ornament" class="ornament" />
-      <img src="./assets/img/logo.svg" alt="Paradís" class="logo">
+      <img src="./assets/img/logo.svg" alt="Paradís" class="logo" />
       <h2>a guarantee of success for any event</h2>
-      <div class="row j-center">
+      <div ng-hide="mobile" class="row j-center">
         <p>
-          The brand PARADIS begins its history in 1967, dedicated to the
-          catering of big events, for more than 50 years. In Europe it has
-          successfully carried out more than 90,000 events, collaborates with
-          more than 23 michelin stars, and throughout Europe it was the first
-          company to obtain the certificate of sustainable catering of
-          sosevents, awarded by the EU. It is the first company that applies the
-          trazacalidad concept to the circle of the kitchen garden with
-          excellence in Europe.
+          The brand PARADIS begins its history in 1967, dedicated to the catering of big events, for more than 50 years.
+          In Europe it has successfully carried out more than 90,000 events, collaborates with more than 23 michelin
+          stars, and throughout Europe it was the first company to obtain the certificate of sustainable catering of
+          sosevents, awarded by the EU. It is the first company that applies the trazacalidad concept to the circle of
+          the kitchen garden with excellence in Europe.
         </p>
         <p>
-          To date it has more than 200 restoration projects, which include,
-          among other restaurants, hotel F & B projects, cafeterias, F & B
-          projects for fairs and central kitchens. Distinguished in the catering
-          sector in Spain, its geographic dispersion of catering activities
-          extends not only throughout the country, it is also punctually in
-          Portugal, France, Andorra, Switzerland, Germany, Holland, New York
-          (The first authentic food restaurant Spanish in 1990), Czech Republic,
-          Mexico and China.
+          To date it has more than 200 restoration projects, which include, among other restaurants, hotel F & B
+          projects, cafeterias, F & B projects for fairs and central kitchens. Distinguished in the catering sector in
+          Spain, its geographic dispersion of catering activities extends not only throughout the country, it is also
+          punctually in Portugal, France, Andorra, Switzerland, Germany, Holland, New York (The first authentic food
+          restaurant Spanish in 1990), Czech Republic, Mexico and China.
         </p>
       </div>
       <img src="./assets/img/slim.svg" alt="Ornament" class="ornament" />
@@ -32,311 +26,178 @@
   </section>
 
   <section class="swiper-slide" id="since">
-    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
-    <h1>Since 1967</h1>
-    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
-
-    <div class="row card armando">
-      <div class="card-content col f-center">
-        <h2>Mr. Armando</h2>
-        <p>
-          Mr. Armando begins his training in architecture. Life takes him by
-          accident to take the reins of what will be his first restaurant,
-          recovering a manorial estate and turning it into the current Can Amat
-          complex. From that moment, he will always remain linked to the world
-          of restoration.
-          <br /><br />
-          Forerunner in his time in this sector, he develops a novel concept in
-          the creation of teams, totally opposed to the traditional "weekend
-          bolo". At the same time, it starts up the Central Kitchen, starting in
-          Spain and later in the rest of the world.
-        </p>
-      </div>
-
-      <div class="img-wrapper">
-        <img src="./assets/img/mr-armand2.jpg" alt="Armando Bejar" />
-        <img
-          class="hover"
-          src="./assets/img/mr-armand2-hover.png"
-          alt="Armando Bejar"
-        />
-        <img
-          ng-if="!mobile"
-          class="float-logo tr"
-          src="./assets/img/logo.svg"
-          alt="Paradis Chengdu"
-        />
-      </div>
+    <div class="title col">
+      <h1>Since 1967</h1>
+      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
     </div>
 
-    <div class="row card">
-      <div class="card-content col f-center">
-        <img
-          src="./assets/img/silver.svg"
-          alt="Armando Silver Fox"
-          class="silver-fox"
-        />
-        <h2>Armando & Chengdu</h2>
-        <p>
-          Armando Bejar currently works as a consultant, adviser, mentor and is
-          considered one of the leading experts in international catering.
-        </p>
+    <div class="since">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide row card armando">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>Mr. Armando</h2>
+            <p ng-hide="mobile">
+              Mr. Armando begins his training in architecture. Life takes him by accident to take the reins of what will
+              be his first restaurant, recovering a manorial estate and turning it into the current Can Amat complex.
+              From that moment, he will always remain linked to the world of restoration.
+              <br /><br />
+              Forerunner in his time in this sector, he develops a novel concept in the creation of teams, totally
+              opposed to the traditional "weekend bolo". At the same time, it starts up the Central Kitchen, starting in
+              Spain and later in the rest of the world.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide row card chengdu">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>Armando & Chengdu</h2>
+            <p ng-hide="mobile">
+              Armando Bejar currently works as a consultant, adviser, mentor and is considered one of the leading
+              experts in international catering.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide row card friends">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>Armando & Friends</h2>
+            <p ng-hide="mobile">
+              More than 50 years in the hotel trade, we have made us meet with many celebrities in the sector, both
+              catering and other sectors related to catering and events.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div class="img-wrapper">
-        <img src="./assets/img/armando-chengdu.jpg" alt="Armando & Chengdu" />
-      </div>
-    </div>
-
-    <div class="row card">
-      <div class="card-content col f-center">
-        <h2>Armando & Friends</h2>
-        <p>
-          More than 50 years in the hotel trade, we have made us meet with many
-          celebrities in the sector, both catering and other sectors related to
-          catering and events.
-        </p>
-      </div>
-
-      <div class="img-wrapper">
-        <ui-carousel
-          slides="slidesFriends"
-          speed="900"
-          on-init="onCarouselInit()"
-          on-before-change="onCarouselBeforeChange()"
-          on-after-change="onCarouselAfterChange()"
-        >
-          <carousel-item>
-            <img
-              class="img-slide"
-              ng-src="{{ item.image }}"
-              alt="{{ item.title }}"
-            />
-          </carousel-item>
-        </ui-carousel>
-      </div>
-    </div>
-
-    <div class="section-footer">
-      <p>
-        Más de 60 Tapasbar | Más de 30 Cafeterías | 30 Cocinas Centrales |
-        Proyectos diversos | Colaboraciones con Hoteles de nivel
-      </p>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
 
-  <!-- <section class="swiper-slide" id="catering">
-    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
-    <h1>Catering & Events</h1>
-    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
-
-    <div class="row card">
-      <div class="card-content col f-center">
-        <h2>High level catering</h2>
-        <p>
-          Our high level catering division that operates under the Gourmet
-          Paradís Catering brand has central kitchens in different parts of
-          Spain, and logistics centers with a wide range of material for
-          catering, events and ephemeral decoration. The premise is, however, to
-          provide all events that organize a unique and personalized style
-          always respecting the needs of the client, the peculiarities of the
-          environment and high levels of quality.
-        </p>
-      </div>
-
-      <div class="img-wrapper">
-        <ui-carousel
-          slides="slidesHigh"
-          speed="900"
-          on-init="onCarouselInit()"
-          on-before-change="onCarouselBeforeChange()"
-          on-after-change="onCarouselAfterChange()"
-        >
-          <carousel-item>
-            <img
-              class="img-slide"
-              ng-src="{{ item.image }}"
-              alt="{{ item.title }}"
-            />
-          </carousel-item>
-        </ui-carousel>
-      </div>
+  <section class="swiper-slide" id="catering">
+    <div class="title col">
+      <h1>Catering & Events</h1>
+      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
     </div>
 
-    <div class="row card">
-      <div class="card-content col f-center">
-        <h2>Service</h2>
-        <p>
-          A highly trained and cohesive human team allows us to move with
-          agility and imagination.
-        </p>
+    <div class="catering">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide row card high">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>High level catering</h2>
+            <p ng-hide="mobile">
+              Our high level catering division that operates under the Gourmet Paradís Catering brand has central
+              kitchens in different parts of Spain, and logistics centers with a wide range of material for catering,
+              events and ephemeral decoration. The premise is, however, to provide all events that organize a unique and
+              personalized style always respecting the needs of the client, the peculiarities of the environment and
+              high levels of quality.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide row card service">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>Service</h2>
+            <p ng-hide="mobile">
+              A highly trained and cohesive human team allows us to move with agility and imagination.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide row card food">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>Finger Food</h2>
+            <h2>Cocktail</h2>
+            <h2>Coffee Break</h2>
+            <h2>Gala Dinner</h2>
+            <h2>Buffet</h2>
+            <h2 style="margin-bottom: 0;">Topic & Customed</h2>
+          </div>
+        </div>
       </div>
 
-      <div class="img-wrapper">
-        <ui-carousel
-          slides="slidesServ"
-          speed="900"
-          on-init="onCarouselInit()"
-          on-before-change="onCarouselBeforeChange()"
-          on-after-change="onCarouselAfterChange()"
-        >
-          <carousel-item>
-            <img
-              class="img-slide"
-              ng-src="{{ item.image }}"
-              alt="{{ item.title }}"
-            />
-          </carousel-item>
-        </ui-carousel>
-      </div>
-    </div>
-
-    <div class="row card">
-      <div class="card-content col f-center">
-        <h2>Finger Food</h2>
-        <h2>Cocktail</h2>
-        <h2>Coffee Break</h2>
-        <h2>Gala Dinner</h2>
-        <h2>Buffet</h2>
-        <h2 style="margin-bottom: 0;">Topic & Customed</h2>
-      </div>
-
-      <div class="img-wrapper">
-        <ui-carousel
-          slides="slidesFood"
-          speed="900"
-          on-init="onCarouselInit()"
-          on-before-change="onCarouselBeforeChange()"
-          on-after-change="onCarouselAfterChange()"
-        >
-          <carousel-item>
-            <img
-              class="img-slide"
-              ng-src="{{ item.image }}"
-              alt="{{ item.title }}"
-            />
-          </carousel-item>
-        </ui-carousel>
-      </div>
-    </div>
-
-    <div class="section-footer">
-      <p>
-        We stand out for the ability to transmit security and flexibility to our
-        customers.
-      </p>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
 
   <section class="swiper-slide" id="gastrolab">
-    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
-    <h1>Gastrolab</h1>
-    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
-
-    <div class="row card">
-      <div class="card-content col f-center">
-        <h2>I+D</h2>
-        <p>
-          Gastrolab is our laboratory I+D. Our expirience allows us to innovate
-          and discover new forms of expressions, which we then take to all our
-          services.
-        </p>
-      </div>
-
-      <div class="img-wrapper">
-        <ui-carousel
-          slides="slidesLab"
-          speed="900"
-          on-init="onCarouselInit()"
-          on-before-change="onCarouselBeforeChange()"
-          on-after-change="onCarouselAfterChange()"
-        >
-          <carousel-item>
-            <img
-              class="img-slide"
-              ng-src="{{ item.image }}"
-              alt="{{ item.title }}"
-            />
-          </carousel-item>
-        </ui-carousel>
-      </div>
+    <div class="title col">
+      <h1>Gastrolab</h1>
+      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
     </div>
 
-    <div class="section-footer">
-      <p>
-        The creative laboratory of our Chefs team by Paradis.
-      </p>
+    <div class="gastrolab">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide row card iplusd">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>I+D</h2>
+            <p ng-hide="mobile">
+              Gastrolab is our laboratory I+D. Our expirience allows us to innovate and discover new forms of
+              expressions, which we then take to all our services.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="swiper-slide" id="weare">
-    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
-    <h1>We are what we eat</h1>
-    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
-
-    <div class="row card">
-      <div class="card-content col f-center">
-        <h2>
-          Ecological products, <br />
-          own gardens
-        </h2>
-        <p>
-          Each substance that contains the food ends up in our cells, improving
-          our health and even our state of mind. Our agricultural production is
-          totally ecological.
-        </p>
-      </div>
-
-      <div class="img-wrapper">
-        <img src="./assets/img/ecologic.jpg" alt="Ecologic" />
-        <img
-          ng-if="!mobile"
-          class="float-logo br"
-          src="./assets/img/logo.svg"
-          alt="Paradis Chengdu"
-        />
-      </div>
+    <div class="title col">
+      <h1>We are what we eat</h1>
+      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
     </div>
 
-    <div class="row card">
-      <div class="card-content col f-center">
-        <h2>
-          Responsable
-        </h2>
-        <p>
-          With a responsible and artisan elaboration, treated with the maximum
-          respect in all its process, to guarantee the maximum quality of the
-          product.
-        </p>
+    <div class="weare">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide row card ecologic">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>
+              Ecological products, <br />
+              own gardens
+            </h2>
+            <p ng-hide="mobile">
+              Each substance that contains the food ends up in our cells, improving our health and even our state of
+              mind. Our agricultural production is totally ecological.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide row card responsable">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>Responsable</h2>
+            <p ng-hide="mobile">
+              With a responsible and artisan elaboration, treated with the maximum respect in all its process, to
+              guarantee the maximum quality of the product.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div class="img-wrapper">
-        <ui-carousel
-          slides="slidesRes"
-          speed="900"
-          on-init="onCarouselInit()"
-          on-before-change="onCarouselBeforeChange()"
-          on-after-change="onCarouselAfterChange()"
-        >
-          <carousel-item>
-            <img
-              class="img-slide"
-              ng-src="{{ item.image }}"
-              alt="{{ item.title }}"
-            />
-          </carousel-item>
-        </ui-carousel>
-      </div>
-    </div>
-
-    <div class="section-footer">
-      <p>
-        This is our reason for being and our humble way of giving back to nature
-        all that it gives us.
-      </p>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
 
+  <!-- 
   <section class="swiper-slide" id="seal">
     <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
     <h1>Star Seal</h1>

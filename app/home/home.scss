@@ -1,201 +1,6 @@
 @import "../../assets/scss/vars";
 
 .home-box {
-  width: 100vw;
-
-  /* section {
-    position: relative;
-    width: 100%;
-    text-align: center;
-
-    .ornament {
-      width: 150px;
-      object-fit: contain;
-    }
-
-    .turn {
-      transform: rotate(180deg);
-      margin-bottom: 10px;
-    }
-
-    .end {
-      margin-bottom: 40px;
-    }
-
-    .logo {
-      margin-bottom: 40px;
-      line-height: 1;
-    }
-
-    h1 {
-      color: $pri;
-      margin-bottom: 10px;
-      line-height: 1;
-    }
-
-    h2 {
-      color: $pri;
-      margin-bottom: 20px;
-    }
-
-    .card {
-      border-top: 1px solid $pri;
-      border-bottom: 1px solid $pri;
-
-      &:first-of-type {
-        border-top: 2px solid $pri;
-      }
-
-      &:last-of-type {
-        border-top: 2px solid $pri;
-      }
-
-      &:nth-of-type(even) {
-        flex-direction: row-reverse;
-      }
-    }
-
-    .card-content {
-      width: 35%;
-      height: 60vh;
-      background: rgba(#000, 0.7);
-      padding: 40px;
-
-      .silver-fox {
-        height: 70%;
-        max-height: 300px;
-        object-fit: contain;
-        margin-bottom: 20px;
-      }
-
-      h3 {
-        color: $pri;
-        margin-bottom: 20px;
-      }
-
-      p {
-        color: #fff;
-        font-size: 14px;
-        line-height: 1.4;
-      }
-
-      ul {
-        color: $pri;
-        li {
-          font-size: 12px;
-        }
-      }
-    }
-
-    .img-wrapper {
-      position: relative;
-      width: 65%;
-      height: 60vh;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .img-slide {
-      width: 100%;
-      height: 60vh;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .float-logo {
-      position: absolute;
-      width: 150px;
-      max-height: 100px;
-      object-fit: contain;
-      border: none;
-    }
-
-    .tl {
-      top: 20px;
-      left: 20px;
-    }
-    .tr {
-      top: 20px;
-      right: 30px;
-    }
-    .bl {
-      bottom: 20px;
-      left: 20px;
-    }
-    .br {
-      bottom: 20px;
-      right: 30px;
-    }
-
-    .section-footer {
-      background: $pri;
-      padding: 20px 40px;
-      line-height: 1.4;
-    }
-
-    .armando {
-      .card-content {
-        height: 70vh;
-      }
-
-      .img-wrapper {
-        position: relative;
-      }
-
-      img {
-        height: 70vh;
-      }
-
-      .hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.9;
-        transform-origin: bottom;
-        transition: 0.5s;
-        filter: blur(1px);
-
-        &:hover {
-          opacity: 0;
-        }
-      }
-    }
-
-    .final {
-      .card-content {
-        width: 50%;
-        height: 80vh;
-        background: #000;
-      }
-      
-      .img-wrapper {
-        width: 50%;
-        height: 80vh;
-        background: #000;
-      }
-      
-      img {
-        height: 100%;
-        padding: 30px 0;
-        filter: saturate(0);
-      }
-    }
-
-    .full-img {
-      width: 100%;
-      height: 60vh;
-      object-fit: cover;
-      object-position: center;
-      border-top: 2px solid $pri;
-      margin-bottom: -5px;
-    }
-  }
- */
 
   #paradis {
     background: url("../../assets/img/paradis-chengdu.jpg") no-repeat center;
@@ -239,6 +44,7 @@
 
       h2 {
         margin-bottom: 2%;
+        text-align: center;
       }
 
       p {
@@ -251,70 +57,288 @@
     }
   }
 
-  #contact {
-    .contact-box {
+  #since {
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 40px 40px 0 40px;
       color: $pri;
+      z-index: 1;
 
-      img {
-        width: 200px;
-        margin-bottom: 40px;
+      .ornament {
+        width: 150px;
+        max-width: 150px;
+        height: 70px;
+        object-fit: contain;
       }
+    }
 
-      .contact-left,
-      .contact-right {
-        width: 50%;
-        padding: 40px;
+    .since {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background: linear-gradient(left, #000, transparent);
+      }
+      
+      .card-content {
+        position: relative;
+        width: 40%;
+        max-width: 500px;
+        height: 100%;
+        color: #fff;
+        padding: 0 0 80px 80px;
+
+        h2 {
+          margin-bottom: 2%;
+        }
 
         p {
-          margin-bottom: 20px;
-        }
-
-        a {
-          color: $pri;
-          text-decoration: underline;
-          margin-bottom: 10px;
+          font-size: 14px;
         }
       }
+    }
 
-      .contact-left {
-        border-right: 2px solid $pri;
+    .armando {
+      background: url("../../assets/img/armando.jpg") no-repeat center;
+      background-size: cover;
+    }
+    
+    .chengdu {
+      background: url("../../assets/img/armando-chengdu.jpg") no-repeat center;
+      background-size: cover;
+    }
+    
+    .friends {
+      background: url("../../assets/img/ferran.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+  
+  #catering {
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 40px 40px 0 40px;
+      color: $pri;
+      z-index: 1;
+
+      .ornament {
+        width: 150px;
+        max-width: 150px;
+        height: 70px;
+        object-fit: contain;
       }
     }
-  }
 
-  .book-wrapper {
-    padding: 40px;
-    background: rgba(#000, 0.7);
-    border-top: 2px solid $pri;
-    border-bottom: 3px solid $pri;
-    margin-bottom: 5%;
-  }
-
-  #flipbook {
-    height: 60vh !important;
-
-    .page-wrapper {
-      height: 60vh !important;
+    .catering {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
     }
 
-    .page {
-      width: 90%;
-      height: 60vh !important;
-      background-image: linear-gradient(right, #fff 95%, #cacaca 100%);
+    .card {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
 
-      img {
-        width: 100%;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
         height: 100%;
-        object-fit: cover;
-        object-position: center;
+        background: linear-gradient(left, #000, transparent);
+      }
+      
+      .card-content {
+        position: relative;
+        width: 40%;
+        max-width: 500px;
+        height: 100%;
+        color: #fff;
+        padding: 0 0 80px 80px;
+
+        h2 {
+          margin-bottom: 2%;
+        }
+
+        p {
+          font-size: 14px;
+        }
       }
     }
 
-    .odd {
-      background-image: linear-gradient(right, #fff 95%, #cacaca 100%);
+    .high {
+      background: url("../../assets/img/high1.jpg") no-repeat center;
+      background-size: cover;
     }
-    .even {
-      background-image: linear-gradient(left, #fff 95%, #dadada 100%);
+    
+    .service {
+      background: url("../../assets/img/service1.jpg") no-repeat center;
+      background-size: cover;
+    }
+    
+    .food {
+      background: url("../../assets/img/food1.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  #gastrolab {
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 40px 40px 0 40px;
+      color: $pri;
+      z-index: 1;
+
+      .ornament {
+        width: 150px;
+        max-width: 150px;
+        height: 70px;
+        object-fit: contain;
+      }
+    }
+
+    .gastrolab {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background: linear-gradient(left, #000, transparent);
+      }
+      
+      .card-content {
+        position: relative;
+        width: 40%;
+        max-width: 500px;
+        height: 100%;
+        color: #fff;
+        padding: 0 0 80px 80px;
+
+        h2 {
+          margin-bottom: 2%;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .iplusd {
+      background: url("../../assets/img/lab1.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+  
+  #weare {
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 40px 40px 0 40px;
+      color: $pri;
+      z-index: 1;
+
+      .ornament {
+        width: 150px;
+        max-width: 150px;
+        height: 70px;
+        object-fit: contain;
+      }
+    }
+
+    .weare {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background: linear-gradient(left, #000, transparent);
+      }
+      
+      .card-content {
+        position: relative;
+        width: 40%;
+        max-width: 500px;
+        height: 100%;
+        color: #fff;
+        padding: 0 0 80px 80px;
+
+        h2 {
+          margin-bottom: 2%;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .ecologic {
+      background: url("../../assets/img/ecologic.jpg") no-repeat center;
+      background-size: cover;
+    }
+    
+    .responsable {
+      background: url("../../assets/img/responsable1.jpg") no-repeat center;
+      background-size: cover;
     }
   }
 }
