@@ -1,42 +1,40 @@
-<img ng-click="openMenu()" src="./assets/img/menu-left.svg" alt="Menu" class="menu-left" />
+<div ng-if="welcome" class="welcome flex f-center">
+</div>
 
-<div ng-if="menu" class="menu col j-center">
-  <img src="../../assets/img/logo.svg" alt="THEMESIS" class="logo" />
-  <div class="row">
-    <ul class="col">
-      <li ng-click="scrollTo('home')">home</li>
-      <li ng-click="scrollTo('teaser')">teaser (sinopsis)</li>
-      <li ng-click="scrollTo('proyecto')">proyecto</li>
-      <li ng-click="scrollTo('situacion')">situación actual</li>
-      <li ng-click="scrollTo('financiacion')">financiación</li>
-    </ul>
+<img ng-click="scrollTo('paradis')" src="../../assets/img/logo-menu.svg" alt="Paradis Chengdu" class="logo" />
 
-    <ul class="col">
-      <li><a href="https://themesisfilm.wordpress.com/" class="blog">blog</a></li>
-      <li ng-click="scrollTo('partners')">partners</li>
-      <li ng-click="scrollTo('contacto')">contacto (newsletter)</li>
-      <br /><br />
-      <li class="social flex a-center">
-        <p>Síguenos en</p>
-        <a href="https://www.facebook.com/Themesis.film/" target="_blank"
-          ><img src="./assets/img/facebook.svg" alt="facebook"
-        /></a>
-        <a href="https://www.instagram.com/themesis.film/" target="_blank"
-          ><img src="./assets/img/insta.svg" alt="instagram"
-        /></a>
-        <a href="https://twitter.com/Themesisfilm" target="_blank"
-          ><img src="./assets/img/twitter.svg" alt="twitter"
-        /></a>
-        <a href="https://vimeo.com/themesis" target="_blank"><img src="./assets/img/vimeo.svg" alt="vimeo"/></a>
-      </li>
-      <li class="politica">
-        <p>
-          <a ui-sref="legal" ng-click="closeMenu()">Politica de privacidad</a> &
-          <a ui-sref="legal" ng-click="closeMenu()">aviso legal</a>
-        </p>
-      </li>
-    </ul>
+<ul class="menu row j-end a-center">
+  <li ng-click="scrollTo('since')">Since 1967</li>
+  <li ng-click="scrollTo('catering')">Catering & Events</li>
+  <li ng-click="scrollTo('gastrolab')">Gastrolab</li>
+  <li ng-click="scrollTo('weare')">We are what we eat</li>
+  <li ng-click="scrollTo('seal')">Star seal</li>
+  <li ng-click="scrollTo('spaces')">Spaces & Colaborations</li>
+  <li ng-click="scrollTo('contact')">Contact us</li>
+  <li class="lang flex f-center"><img src="../../assets/img/en.svg" alt="english">EN</li>
+</ul>
+
+<div class="burger" ng-click="switchMenu()"><i class="fas fa-ellipsis-v"></i></div>
+
+<div ng-if="mobile" class="mob-menu col f-center">
+  <ul class="col a-center">
+    <li ng-click="scrollTo('since')">Since 1968</li>
+    <li ng-click="scrollTo('catering')">Catering & Events</li>
+    <li ng-click="scrollTo('gastrolab')">Gastrolab</li>
+    <li ng-click="scrollTo('weare')">We are what we eat</li>
+    <li ng-click="scrollTo('seal')">Star seal</li>
+    <li ng-click="scrollTo('spaces')">Spaces & Colaborations</li>
+    <li ng-click="scrollTo('contact')">Contact us</li>
+  </ul>
+
+  <div class="col submenu">
+    <div class="col a-center contact">
+      <p>
+        Office 2803, Yintai Center Tower 3, Tianfu Avenue No.1199, Chengdu,
+        China
+      </p>
+      <a href="mailto:cha@newparadis.com">cha@newparadis.com</a>
+      <a href="tel:008613395457018">+86 133 9545 7018</a>
+    </div>
   </div>
-
-  <button ng-click="closeMenu()" class="pri outline">CERRAR</button>
 </div>

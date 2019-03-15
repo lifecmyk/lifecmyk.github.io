@@ -1,248 +1,472 @@
-<div ng-hide="hideCookies" class="cookies col a-center">
-  <p>
-    Esta web almacena cookies en tu ordenador para mejorar la página y para ofrecerte servicios más personalizados,
-    tanto en esta web como en otros canales online. Consientes la recopilación de cookies y el tratamiento de las mismas
-    en caso de continuar navegando por nuestra página web. Puedes acceder a nuestra
-    <a ui-sref="legal">Política de privacidad</a> y cookies para obtener más información.
-  </p>
-  <button class="pri outline" ng-click="acceptCookies()">Continuar navegando</button>
-</div>
-
-<div class="home-box scroll">
-  <div class="video">
-    <video loop id="bg" src="./assets/img/bgvideo.mp4" type="video/mp4"></video>
+<div class="swiper-wrapper home-box">
+  <section class="swiper-slide" id="paradis">
     <div class="overlay"></div>
-    <audio loop id="ambient">
-      <source src="./assets/img/ambient.wav" type="audio/wav" />
-    </audio>
-  </div>
-
-  <div id="home" class="col f-center">
-    <div class="audio flex f-center animated">
-      <i ng-if="!audioOn" ng-click="switchAudio()" class="fas fa-microphone-slash"></i>
-      <i ng-if="audioOn" ng-click="switchAudio()" class="fas fa-microphone"></i>
-    </div>
-
-    <img class="logo" src="../../assets/img/logo.svg" alt="THEMESIS" />
-    <div class="row j-center">
-      <a ng-click="scrollTo('teaser')" class="btn pri outline">VER TEASER</a>
-      <a href="https://themesisfilm.wordpress.com/" class="btn">visitar blog</a>
-    </div>
-
-    <div class="gradient"></div>
-
-    <div class="social flex j-end a-center">
-      <p>Síguenos en</p>
-      <a href="https://www.facebook.com/Themesis.film/" target="_blank"
-        ><img src="./assets/img/facebook.svg" alt="facebook"
-      /></a>
-      <a href="https://www.instagram.com/themesis.film/" target="_blank"
-        ><img src="./assets/img/insta.svg" alt="instagram"
-      /></a>
-      <a href="https://twitter.com/Themesisfilm" target="_blank"><img src="./assets/img/twitter.svg" alt="twitter"/></a>
-      <a href="https://vimeo.com/themesis" target="_blank"><img src="./assets/img/vimeo.svg" alt="vimeo"/></a>
-    </div>
-
-    <div class="scroller"></div>
-  </div>
-
-  <div class="gradient-bg"></div>
-  <div class="video-bg">
-    <video loop id="bgDust" src="./assets/img/dust.mp4" type="video/mp4"></video>
-  </div>
-
-  <div id="teaser" class="col f-center">
-    <h1>teaser</h1>
-
-    <iframe
-      src="https://player.vimeo.com/video/322162668"
-      frameborder="0"
-      webkitallowfullscreen
-      mozallowfullscreen
-      allowfullscreen
-    ></iframe>
-  </div>
-
-  <div id="sinopsis" class="col f-center">
-    <h1>sinopsis</h1>
-    <p>
-      “Belva sobrevive atada a la prostitución. Marta no comprende la banalidad de quienes le rodean. Nancy es esclava
-      de su pasado. Kaseem no logra encajar en su comunidad. Ante un mundo injusto, la suerte no se busca, se crea.”
-    </p>
-  </div>
-
-  <div id="proyecto" class="col f-center">
-    <h1>proyecto</h1>
-    <div class="row j-center">
-      <p>
-        Themesis es un largometraje con trasfondo social. Es una idea original que pretende invitar al espectador a la
-        reflexión. Atiende a situaciones cotidianas injustas y que pasan desapercibidas.
-        <br /><br />
-        La producción de este film está realizada principalmente por estudiantes del último curso del grado de Medios
-        Audiovisuales del Tecnocampus Mataró de la UPF así como docentes de la misma institución.
-      </p>
-      <p>
-        Themesis será el primer largometraje producido por miembros del TecnoCampus Mataró, centro adherido a la
-        Universidad Pompeu Fabra. En paralelo a la actividad docente, al proyecto también se han sumado varios
-        profesionales del sector audiovisual.
-        <br /><br />
-        Themesis es un film que no cuenta con recursos propios sino que se financiará con aportaciones de sus miembros y
-        de todo aquellos mecenas, interesados en promover la cultura audiovisual, a través de
-        <a href="https://www.verkami.com/">Verkami</a>: la mayor plataforma de Crowdfunding de Europa.
-      </p>
-    </div>
-  </div>
-
-  <div id="situacion" class="row j-center">
-    <h1>situación<br />actual</h1>
-    <p>
-      Themesis se encuentra en fase de pre-producción.
-      <br /><br />
-      En este periodo se iniciará la recaudación de recursos del proyecto a través de la mayor plataforma online de
-      Crowdfunding creativo en Europa: <a href="https://www.verkami.com/">Verkami</a>. <br /><br />
-      El próximo 17 de mayo estaremos presentes en el
-      <a href="http://salondelcine.com/">Salón del Cine y la Series</a> de Barcelona donde hemos sido seleccionados a
-      participar en las Jornada de <a href="https://www.verkami.com/">Verkami</a> en Vivo que se realizan durante el
-      Salón. <br /><br />
-      Podéis encontrar todos los detalles en la sección financiación
-    </p>
-  </div>
-
-  <div id="financiacion" class="col a-center">
-    <h1>financiación</h1>
-    <p class="first">
-      A pesar de que Themesis se define como una producción low cost, nuestra intención es crear una obra de calidad
-      tanto técnica como artística en la que se necesitaran recursos monetarios.
-      <br /><br />
-      Por esta razón, se expondrá el proyecto en la plataforma online de crowdfunding
-      <a href="https://www.verkami.com/">Verkami</a>: la mayor red de crowdfunding creativo de Europa y con el
-      porcentaje de éxito más alto del mundo. <br /><br />
-      Themesis ha sido seleccionado en el <a href="http://salondelcine.com/">Salón del Cine y la Series</a> de Barcelona
-      para participar en su <a href="https://www.verkami.com/">Verkami</a> en vivo. Evento que tendrá lugar los próximos
-      17, 18 y 19 de mayo.
-    </p>
-
-    <div class="row j-center">
-      <div class="col a-center data">
-        <i class="fas fa-box-open"></i>
-        <p>
-          Abriendo nuestro proyecto a la financiación por mecenazgo.
-        </p>
-      </div>
-
-      <div class="col a-center data">
-        <i class="far fa-calendar-alt"></i>
-        <p>
-          40 días por delante que marcarán nuestro destino.
-        </p>
-      </div>
-
-      <div class="col a-center data">
-        <i class="fas fa-child"></i>
-        <p>
-          ¡Esperamos tu granito de arena!
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="partners" class="col a-center">
-    <h1>partners</h1>
-
-    <div class="row j-center">
-      <div class="card col a-center">
-        <img src="../../assets/img/maresme.svg" alt="Maresme Film Comission" />
-        <div class="col a-center">
-          <p>Maresme Film Comission</p>
-          <a href="https://maresmefilmcommission.cat/" target="_blank">www.maresmefilmcommission.cat</a>
-        </div>
-      </div>
-
-      <div class="card col a-center">
-        <img src="../../assets/img/imagina.png" alt="Imagina Música" />
-        <div class="col a-center">
-          <p>Imagina Música</p>
-          <a href="http://www.imaginamusica.net/" target="_blank">www.imaginamusica.net</a>
-        </div>
-      </div>
-
-      <div class="card col a-center">
-        <img src="../../assets/img/tecnocampus.svg" alt="Tecnocampus UPF" />
-        <div class="col a-center">
-          <p>Tecnocampus UPF</p>
-          <a href="https://www.tecnocampus.cat/" target="_blank">www.tecnocampus.cat</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contacto" class="col a-center">
-    <h1>newsletter</h1>
-
-    <div id="mc_embed_signup">
-      <form
-        action="https://themesisfilm.us20.list-manage.com/subscribe/post?u=d1419545207489595cf590838&amp;id=42889b6b8e"
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        class="validate"
-        target="_blank"
-        novalidate
-      >
-        <div id="mc_embed_signup_scroll" class="col a-center">
-          <h2>Suscríbete a nuestra newsletter</h2>
-          <div class="mc-field-group">
-            <input
-              type="email"
-              value=""
-              name="EMAIL"
-              class="required email"
-              id="mce-EMAIL"
-              placeholder="Correo electrónico"
-            />
-          </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_d1419545207489595cf590838_42889b6b8e" tabindex="-1" value="" />
-          </div>
-          <div class="clear">
-            <input type="submit" value="SUSCRÍBETE" name="subscribe" id="mc-embedded-subscribe" class="pri outline" />
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <footer class="col a-center">
-      <img ng-click="scrollTo('home')" class="logo" src="../../assets/img/logo.svg" alt="THEMESIS" />
-
+    <div class="content col f-center">
+      <img src="./assets/img/slim.svg" alt="Ornament" class="ornament" />
+      <img src="./assets/img/logo.svg" alt="Paradís" class="logo">
+      <h2>a guarantee of success for any event</h2>
       <div class="row j-center">
-        <p class="contact">
-          Más información en
-          <a href="tel:0034654786751">654 78 67 51</a>
-          /
-          <a href="tel:0034620722811">620 72 28 11</a>
-          o
-          <a href="mailto:themesis.film@gmail.com">themesis.film@gmail.com</a>
-          <a href="mailto:themesis.cast@gmail.com">themesis.cast@gmail.com</a>
+        <p>
+          The brand PARADIS begins its history in 1967, dedicated to the
+          catering of big events, for more than 50 years. In Europe it has
+          successfully carried out more than 90,000 events, collaborates with
+          more than 23 michelin stars, and throughout Europe it was the first
+          company to obtain the certificate of sustainable catering of
+          sosevents, awarded by the EU. It is the first company that applies the
+          trazacalidad concept to the circle of the kitchen garden with
+          excellence in Europe.
+        </p>
+        <p>
+          To date it has more than 200 restoration projects, which include,
+          among other restaurants, hotel F & B projects, cafeterias, F & B
+          projects for fairs and central kitchens. Distinguished in the catering
+          sector in Spain, its geographic dispersion of catering activities
+          extends not only throughout the country, it is also punctually in
+          Portugal, France, Andorra, Switzerland, Germany, Holland, New York
+          (The first authentic food restaurant Spanish in 1990), Czech Republic,
+          Mexico and China.
+        </p>
+      </div>
+      <img src="./assets/img/slim.svg" alt="Ornament" class="ornament" />
+    </div>
+  </section>
+
+  <section class="swiper-slide" id="since">
+    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
+    <h1>Since 1967</h1>
+    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
+
+    <div class="row card armando">
+      <div class="card-content col f-center">
+        <h2>Mr. Armando</h2>
+        <p>
+          Mr. Armando begins his training in architecture. Life takes him by
+          accident to take the reins of what will be his first restaurant,
+          recovering a manorial estate and turning it into the current Can Amat
+          complex. From that moment, he will always remain linked to the world
+          of restoration.
+          <br /><br />
+          Forerunner in his time in this sector, he develops a novel concept in
+          the creation of teams, totally opposed to the traditional "weekend
+          bolo". At the same time, it starts up the Central Kitchen, starting in
+          Spain and later in the rest of the world.
         </p>
       </div>
 
-      <div class="social flex a-center">
-        <p>Síguenos en</p>
-        <a href="https://www.facebook.com/Themesis.film/" target="_blank"
-          ><img src="./assets/img/facebook.svg" alt="facebook"
-        /></a>
-        <a href="https://www.instagram.com/themesis.film/" target="_blank"
-          ><img src="./assets/img/insta.svg" alt="instagram"
-        /></a>
-        <a href="https://twitter.com/Themesisfilm" target="_blank"
-          ><img src="./assets/img/twitter.svg" alt="twitter"
-        /></a>
-        <a href="https://vimeo.com/themesis" target="_blank"><img src="./assets/img/vimeo.svg" alt="vimeo"/></a>
+      <div class="img-wrapper">
+        <img src="./assets/img/mr-armand2.jpg" alt="Armando Bejar" />
+        <img
+          class="hover"
+          src="./assets/img/mr-armand2-hover.png"
+          alt="Armando Bejar"
+        />
+        <img
+          ng-if="!mobile"
+          class="float-logo tr"
+          src="./assets/img/logo.svg"
+          alt="Paradis Chengdu"
+        />
       </div>
-    </footer>
-  </div>
+    </div>
+
+    <div class="row card">
+      <div class="card-content col f-center">
+        <img
+          src="./assets/img/silver.svg"
+          alt="Armando Silver Fox"
+          class="silver-fox"
+        />
+        <h2>Armando & Chengdu</h2>
+        <p>
+          Armando Bejar currently works as a consultant, adviser, mentor and is
+          considered one of the leading experts in international catering.
+        </p>
+      </div>
+
+      <div class="img-wrapper">
+        <img src="./assets/img/armando-chengdu.jpg" alt="Armando & Chengdu" />
+      </div>
+    </div>
+
+    <div class="row card">
+      <div class="card-content col f-center">
+        <h2>Armando & Friends</h2>
+        <p>
+          More than 50 years in the hotel trade, we have made us meet with many
+          celebrities in the sector, both catering and other sectors related to
+          catering and events.
+        </p>
+      </div>
+
+      <div class="img-wrapper">
+        <ui-carousel
+          slides="slidesFriends"
+          speed="900"
+          on-init="onCarouselInit()"
+          on-before-change="onCarouselBeforeChange()"
+          on-after-change="onCarouselAfterChange()"
+        >
+          <carousel-item>
+            <img
+              class="img-slide"
+              ng-src="{{ item.image }}"
+              alt="{{ item.title }}"
+            />
+          </carousel-item>
+        </ui-carousel>
+      </div>
+    </div>
+
+    <div class="section-footer">
+      <p>
+        Más de 60 Tapasbar | Más de 30 Cafeterías | 30 Cocinas Centrales |
+        Proyectos diversos | Colaboraciones con Hoteles de nivel
+      </p>
+    </div>
+  </section>
+
+  <!-- <section class="swiper-slide" id="catering">
+    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
+    <h1>Catering & Events</h1>
+    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
+
+    <div class="row card">
+      <div class="card-content col f-center">
+        <h2>High level catering</h2>
+        <p>
+          Our high level catering division that operates under the Gourmet
+          Paradís Catering brand has central kitchens in different parts of
+          Spain, and logistics centers with a wide range of material for
+          catering, events and ephemeral decoration. The premise is, however, to
+          provide all events that organize a unique and personalized style
+          always respecting the needs of the client, the peculiarities of the
+          environment and high levels of quality.
+        </p>
+      </div>
+
+      <div class="img-wrapper">
+        <ui-carousel
+          slides="slidesHigh"
+          speed="900"
+          on-init="onCarouselInit()"
+          on-before-change="onCarouselBeforeChange()"
+          on-after-change="onCarouselAfterChange()"
+        >
+          <carousel-item>
+            <img
+              class="img-slide"
+              ng-src="{{ item.image }}"
+              alt="{{ item.title }}"
+            />
+          </carousel-item>
+        </ui-carousel>
+      </div>
+    </div>
+
+    <div class="row card">
+      <div class="card-content col f-center">
+        <h2>Service</h2>
+        <p>
+          A highly trained and cohesive human team allows us to move with
+          agility and imagination.
+        </p>
+      </div>
+
+      <div class="img-wrapper">
+        <ui-carousel
+          slides="slidesServ"
+          speed="900"
+          on-init="onCarouselInit()"
+          on-before-change="onCarouselBeforeChange()"
+          on-after-change="onCarouselAfterChange()"
+        >
+          <carousel-item>
+            <img
+              class="img-slide"
+              ng-src="{{ item.image }}"
+              alt="{{ item.title }}"
+            />
+          </carousel-item>
+        </ui-carousel>
+      </div>
+    </div>
+
+    <div class="row card">
+      <div class="card-content col f-center">
+        <h2>Finger Food</h2>
+        <h2>Cocktail</h2>
+        <h2>Coffee Break</h2>
+        <h2>Gala Dinner</h2>
+        <h2>Buffet</h2>
+        <h2 style="margin-bottom: 0;">Topic & Customed</h2>
+      </div>
+
+      <div class="img-wrapper">
+        <ui-carousel
+          slides="slidesFood"
+          speed="900"
+          on-init="onCarouselInit()"
+          on-before-change="onCarouselBeforeChange()"
+          on-after-change="onCarouselAfterChange()"
+        >
+          <carousel-item>
+            <img
+              class="img-slide"
+              ng-src="{{ item.image }}"
+              alt="{{ item.title }}"
+            />
+          </carousel-item>
+        </ui-carousel>
+      </div>
+    </div>
+
+    <div class="section-footer">
+      <p>
+        We stand out for the ability to transmit security and flexibility to our
+        customers.
+      </p>
+    </div>
+  </section>
+
+  <section class="swiper-slide" id="gastrolab">
+    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
+    <h1>Gastrolab</h1>
+    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
+
+    <div class="row card">
+      <div class="card-content col f-center">
+        <h2>I+D</h2>
+        <p>
+          Gastrolab is our laboratory I+D. Our expirience allows us to innovate
+          and discover new forms of expressions, which we then take to all our
+          services.
+        </p>
+      </div>
+
+      <div class="img-wrapper">
+        <ui-carousel
+          slides="slidesLab"
+          speed="900"
+          on-init="onCarouselInit()"
+          on-before-change="onCarouselBeforeChange()"
+          on-after-change="onCarouselAfterChange()"
+        >
+          <carousel-item>
+            <img
+              class="img-slide"
+              ng-src="{{ item.image }}"
+              alt="{{ item.title }}"
+            />
+          </carousel-item>
+        </ui-carousel>
+      </div>
+    </div>
+
+    <div class="section-footer">
+      <p>
+        The creative laboratory of our Chefs team by Paradis.
+      </p>
+    </div>
+  </section>
+
+  <section class="swiper-slide" id="weare">
+    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
+    <h1>We are what we eat</h1>
+    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
+
+    <div class="row card">
+      <div class="card-content col f-center">
+        <h2>
+          Ecological products, <br />
+          own gardens
+        </h2>
+        <p>
+          Each substance that contains the food ends up in our cells, improving
+          our health and even our state of mind. Our agricultural production is
+          totally ecological.
+        </p>
+      </div>
+
+      <div class="img-wrapper">
+        <img src="./assets/img/ecologic.jpg" alt="Ecologic" />
+        <img
+          ng-if="!mobile"
+          class="float-logo br"
+          src="./assets/img/logo.svg"
+          alt="Paradis Chengdu"
+        />
+      </div>
+    </div>
+
+    <div class="row card">
+      <div class="card-content col f-center">
+        <h2>
+          Responsable
+        </h2>
+        <p>
+          With a responsible and artisan elaboration, treated with the maximum
+          respect in all its process, to guarantee the maximum quality of the
+          product.
+        </p>
+      </div>
+
+      <div class="img-wrapper">
+        <ui-carousel
+          slides="slidesRes"
+          speed="900"
+          on-init="onCarouselInit()"
+          on-before-change="onCarouselBeforeChange()"
+          on-after-change="onCarouselAfterChange()"
+        >
+          <carousel-item>
+            <img
+              class="img-slide"
+              ng-src="{{ item.image }}"
+              alt="{{ item.title }}"
+            />
+          </carousel-item>
+        </ui-carousel>
+      </div>
+    </div>
+
+    <div class="section-footer">
+      <p>
+        This is our reason for being and our humble way of giving back to nature
+        all that it gives us.
+      </p>
+    </div>
+  </section>
+
+  <section class="swiper-slide" id="seal">
+    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
+    <h1>Star Seal</h1>
+    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
+    <div class="book-wrapper">
+      <div id="flipbook">
+        <div><img src="../../assets/img/page4.jpg" alt="page"></div>
+        <div><img src="../../assets/img/page1.jpg" alt="page"></div>
+        <div><img src="../../assets/img/page2.jpg" alt="page"></div>
+        <div><img src="../../assets/img/page3.jpg" alt="page"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="swiper-slide" id="spaces">
+    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
+    <h1>Spaces & Colaborations</h1>
+    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
+
+    <div class="row card">
+      <div class="card-content col f-center">
+        <h2>The perfect place</h2>
+        <p>
+          With presence in all cities of Spain, we are already a national leader
+          in the organization of events, with average more than 5000 events a
+          year，offering different types of services for 250,000 clients per
+          month, and currently manage more than 300 spaces.
+        </p>
+      </div>
+
+      <div class="img-wrapper">
+        <ui-carousel
+          slides="slidesSpace"
+          speed="900"
+          on-init="onCarouselInit()"
+          on-before-change="onCarouselBeforeChange()"
+          on-after-change="onCarouselAfterChange()"
+        >
+          <carousel-item>
+            <img
+              class="img-slide"
+              ng-src="{{ item.image }}"
+              alt="{{ item.title }}"
+            />
+          </carousel-item>
+        </ui-carousel>
+      </div>
+    </div>
+
+    <div class="row card final">
+      <div class="card-content col f-center">
+        <h2>Customers who trust on us</h2>
+        <ul>
+          <li>Catering FC Catering 7 years</li>
+          <li>Family Day SEAT 55.000 Pax</li>
+          <li>Final Four Basket 2.500pax</li>
+          <li>Fan Boulevard Trofeo CONDE GODO 20.000pax</li>
+          <li>Hospitality VIP WORLDBASKET 2.500pax</li>
+          <li>Cocktail Repsol 1.300pax</li>
+          <li>Cocktail dinner Congress against HIV 12.000pax</li>
+          <li>Anniversary EL CORTE INGLES 5.000pax</li>
+          <li>Congress MICROSOFT 6.500pax</li>
+          <li>CUP DAVIS Cocktail 12.000pax</li>
+          <li>Buffet GRAN PREMIO F1 Barcelona 1.250pax</li>
+          <li>Presentation GROUP MAZDA 3.000pax</li>
+          <li>CHRISTMAS DINNER of MANGO 1.600pax</li>
+          <li>Cocktail of Barcelona City Hall 1.300pax</li>
+          <li>Dinner BBVA 1.480pax</li>
+          <li>Cocktail Fundation ESADE 1.950pax</li>
+          <li>Open Bar Salon Auto SEAT 2.000pax</li>
+          <li>Cocktail presentation SEAT IBIZA 3.000pax</li>
+          <li>Catering official MOTO GP</li>
+          <li>Catering Conference European BCN 1.800pax</li>
+          <li>Anniversary NISSAN 9.500pax</li>
+          <li>SAP Convention 7.000pax</li>
+        </ul>
+      </div>
+
+      <div class="img-wrapper">
+        <img src="./assets/img/space9.jpg" alt="Customers" />
+      </div>
+    </div>
+
+    <div class="section-footer">
+      <p>
+        Exclusive and emblematic spaces, complemented by the best staging.
+      </p>
+    </div>
+  </section>
+
+  <section class="swiper-slide" id="contact">
+    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
+    <h1>Contact Us</h1>
+    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
+
+    <div class="contact-box row">
+      <div class="contact-left col a-center">
+        <img src="../../assets/img/logo-madrid.svg" alt="Paradis España" />
+        <h2>España</h2>
+        <p>
+          BARCELONA
+        </p>
+        <a href="mailto:info@newparadis.com">info@newparadis.com</a>
+        <a href="tel:0034937714027">+34 93 771 4027</a>
+        <br />
+        <p>
+          MADRID
+        </p>
+        <a href="mailto:comercialmad@newparadis.com"
+          >comercialmad@newparadis.com</a
+        >
+        <a href="tel:0034914297303">+34 91 429 7303</a>
+      </div>
+
+      <div class="contact-right col a-center">
+        <img src="../../assets/img/logo.svg" alt="Paradis Chengdu" />
+        <h2>Chengdu</h2>
+        <p>
+          Office 2803
+          <br />
+          Yintai Center Tower 3
+          <br />
+          Tianfu Avenue No.1199
+          <br />
+          Chengdu, China
+        </p>
+        <br />
+        <a href="mailto:cha@newparadis.com">cha@newparadis.com</a>
+        <a href="tel:008613395457018">+86 133 9545 7018</a>
+      </div>
+    </div>
+  </section> -->
 </div>

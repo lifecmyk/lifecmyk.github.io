@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="app">
+<html lang="en" ng-app="app">
   <head>
     <!-- <script>
         if (location.hostname !== "localhost" && location.protocol !== "https:") location.protocol = "https:";
@@ -15,11 +15,10 @@
     <link rel="apple-touch-icon" type="image/png" href="./assets/img/mobile.png" />
     <link rel="icon" type="image/png" href="./assets/img/mobile.png" />
     <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-    <meta name="apple-mobile-web-app-title" content="THEMESIS | Film" />
+    <meta name="apple-mobile-web-app-title" content="Paradis®" />
     <!-- Preload -->
     <meta name="fragment" content="!" />
     <link rel="preload" href="./assets/css/main.css" as="style" />
-    <link rel="preload" href="./assets/font/circular.css" as="style" />
 
     <!--
                                 __              
@@ -33,30 +32,31 @@
     -->
 
     <!-- SEO -->
-    <title>THEMESIS | Film</title>
+    <title>Paradis®</title>
     <meta name="author" content="verdu | verdu@live.com" />
-    <meta
-      name="description"
-      content="¿Qué es THEMESIS? THEMESIS es un proyecto de varios estudiantes del TecnoCampus, que consiste en la realización de un largometraje. Para este propósito se cuenta con la ayuda de profesionales del sector y de diversos profesores de la universidad."
-    />
-    <meta name="keywords" content="themesis, película, movie, film, cristian beteta" />
-    <meta property="og:site_name" content="THEMESIS | Film" />
-    <meta property="og:title" content="THEMESIS | Film" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:site_name" content="Paradis®" />
+    <meta property="og:title" content="Paradis®" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://themesisfilm.com" />
-    <meta property="og:image" content="http://themesisfilm.com/assets/img/mobile.png" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/m.navbar.css" media="only screen and (max-width: 1200px)" />
+    <link rel="stylesheet" href="./assets/css/m.navbar.css" media="only screen and (max-width: 1220px)" />
+    <link rel="stylesheet" href="./assets/css/uicarousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <!-- Font / Icons -->
-    <link rel="stylesheet" href="./assets/font/circular.css" />
+    <link rel="stylesheet" href="./assets/font/copperplate.css" />
+    <link rel="stylesheet" href="./assets/font/abraham.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
   </head>
 
   <body>
-    <nav ng-controller="navController" ng-include="'./app/navbar/navbar.html'"></nav>
-    <main ui-view></main>
+    <nav ng-controller="navController" ng-include="'./app/navbar/navbar.html'" class="row"></nav>
+    <main ui-view class="swiper-container"></main>
 
     <!-- Vendors -->
     <script src="./assets/js/fawn.js"></script>
@@ -67,6 +67,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/oclazyload/1.1.0/ocLazyLoad.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="./assets/js/uicarousel.js"></script>
+    <script src="./assets/js/turn.min.js"></script>
     <!-- Bundle -->
     <script src="./assets/js/bundle.js"></script>
   </body>

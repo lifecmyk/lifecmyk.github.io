@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Abraham';
+    src: url('AbrahamLincoln.woff2') format('woff2'),
+        url('AbrahamLincoln.woff') format('woff'),
+        url('AbrahamLincoln.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

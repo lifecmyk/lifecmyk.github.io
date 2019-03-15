@@ -31,23 +31,20 @@ main {
 }
 
 body {
-  background: #000;
-  font-family: "Circular Std";
+  background: #fff url("../../assets/img/bg.jpg") center no-repeat;
+  background-size: cover;
+  font-family: "Montserrat";
 }
 
-//enter view
-main.ng-enter {
-  animation: fadeIn 0.3s ease-out;
-}
-
-//leave view
-main.ng-leave {
-  animation: fadeOut both 0.3s ease-in;
+.swiper-container {
+  width: 100%;
+  height: calc(100% - 60px);
+  top: 60px;
 }
 
 //hyperlinks
 a {
-  color: #fff;
+  color: $link;
   text-decoration: none;
 }
 
@@ -61,17 +58,39 @@ ul {
 }
 
 h1 {
-  @include type(45, 55);
+  font-family: "Abraham";
+  font-weight: normal;
+  @include type(45, 75);
 }
 
 h2 {
+  font-family: "Copperplate";
+  font-weight: normal;
   @include type(25, 35);
+  background: url("../../assets/img/gold.jpg") center no-repeat;
+  background-clip: text;
+  color: transparent !important;
 }
 
 h3 {
+  font-family: "Copperplate";
+  font-weight: normal;
   @include type(15, 25);
 }
 
-p {
-  font-family: monospace;
+//code showing
+code {
+  padding: 20px;
+  background: $title;
+  color: $bg;
+  border-radius: 3px;
+  width: 100%;
+  line-height: 1.2;
+  font-size: 14px;
+  
+  span {
+    color: $success;
+    line-height: 1.2;
+    font-size: 14px;
+  }
 }

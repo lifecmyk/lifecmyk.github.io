@@ -1,32 +1,38 @@
-angular.module("app").controller("navController", function($scope) {
+angular.module("app").controller("navController", function($scope, $timeout) {
   info("Nav loaded");
 
-  if (window.innerWidth <= 1200) {
+  $scope.welcome = false;
+  
+  $timeout(()=> {
+    $scope.welcome = false;
+  }, 3000);
+
+  if (window.innerWidth <= 1220) {
     $scope.mobile = true;
   } else {
     $scope.mobile = false;
   }
 
   window.addEventListener("resize", e => {
-    if (window.innerWidth <= 1200) {
+    if (window.innerWidth <= 1220) {
       $scope.mobile = true;
     } else {
       $scope.mobile = false;
     }
   });
 
-  $scope.menu = false;
+  $scope.switchMenu = () => {
+    _(".mob-menu").tog("active");
+  };
 
-  $scope.openMenu = () => ($scope.menu = true);
-  $scope.closeMenu = () => ($scope.menu = false);
-
-  $scope.scrollTo = function(element) {
-    _(".scroll").scrollTo({
+  $scope.scrollTo = (element) => {
+    _(".scroll  ").scrollTo({
       behavior: "smooth",
       left: 0,
-      top: document.getElementById(element).offsetTop
+      top: document.getElementById(element).offsetTop - 50
     });
 
-    $scope.closeMenu();
-  };
+    _(".mob-menu").del("active");
+  }
+
 });
