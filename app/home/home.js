@@ -24,6 +24,7 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
   });
 
   $timeout(() => {
+    //CATEGORIAS
     const since = new Swiper(".since", {
       direction: "horizontal",
       speed: 800,
@@ -74,6 +75,17 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
       }
+    });
+
+    //BG
+    const bg = new Swiper(".bg", {
+      direction: "horizontal",
+      speed: 2000,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      effect: "fade",
+      autoplay: true
     });
   });
 

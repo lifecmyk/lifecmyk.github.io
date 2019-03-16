@@ -163,6 +163,22 @@
       height: 100%;
       z-index: -1;
 
+      .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+
+        img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
       .overlay {
         position: absolute;
         top: 0;
@@ -189,12 +205,7 @@
         }
       }
     }
-
-    .high {
-      background: url("../../assets/img/high1.jpg") no-repeat center;
-      background-size: cover;
-    }
-
+    
     .service {
       background: url("../../assets/img/service1.jpg") no-repeat center;
       background-size: cover;
