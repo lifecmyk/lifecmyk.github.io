@@ -55,6 +55,14 @@ nav {
       }
     }
 
+    .active {
+      color: $pri;
+    }
+
+    .no-active {
+      color: #fff;
+    }
+
     .lang {
       height: 100%;
       border-left: 1px solid $pri;

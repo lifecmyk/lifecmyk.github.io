@@ -7,6 +7,10 @@ angular.module("app").controller("navController", function($scope, $timeout) {
     $scope.welcome = false;
   }, 3000);
 
+  $scope.switchMenu = () => {
+    _(".mob-menu").tog("active");
+  };
+
   if (window.innerWidth <= 1220) {
     $scope.mobile = true;
   } else {
@@ -21,17 +25,47 @@ angular.module("app").controller("navController", function($scope, $timeout) {
     }
   });
 
-  $scope.switchMenu = () => {
-    _(".mob-menu").tog("active");
-  };
+  const swiper = new Swiper(".swiper-container", {
+    direction: "vertical",
+    speed: 800,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    mousewheel: true
+  });
 
-  /* $scope.scrollTo = (element) => {
-    _(".scroll  ").scrollTo({
-      behavior: "smooth",
-      left: 0,
-      top: document.getElementById(element).offsetTop - 50
+  $timeout(() => {
+    const mainSwiper = document.querySelector(".swiper-container").swiper;
+    $scope.scrollTo = i => mainSwiper.slideTo(i);
+
+    mainSwiper.on("slideChange", () => {
+      $scope.slide = mainSwiper.activeIndex;
+
+      if (mainSwiper.activeIndex === 0) {
+        _(".menu li").del("active");
+      } else if (mainSwiper.activeIndex === 1) {
+        _(".menu li").del("active");
+        _(".menu li")[0].add("active");
+      } else if (mainSwiper.activeIndex === 2) {
+        _(".menu li").del("active");
+        _(".menu li")[1].add("active");
+      } else if (mainSwiper.activeIndex === 3) {
+        _(".menu li").del("active");
+        _(".menu li")[2].add("active");
+      } else if (mainSwiper.activeIndex === 4) {
+        _(".menu li").del("active");
+        _(".menu li")[3].add("active");
+      } else if (mainSwiper.activeIndex === 5) {
+        _(".menu li").del("active");
+        _(".menu li")[4].add("active");
+      } else if (mainSwiper.activeIndex === 6) {
+        _(".menu li").del("active");
+        _(".menu li")[5].add("active");
+      } else if (mainSwiper.activeIndex === 7) {
+        _(".menu li").del("active");
+        _(".menu li")[6].add("active");
+      } else {
+        _(".menu li").del("active");
+      }
     });
-
-    _(".mob-menu").del("active");
-  } */
+  }, 1000);
 });

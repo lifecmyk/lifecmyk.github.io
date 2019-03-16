@@ -3,7 +3,7 @@
     <div class="overlay"></div>
     <div class="content col f-center">
       <img src="./assets/img/slim.svg" alt="Ornament" class="ornament" />
-      <img src="./assets/img/logo.svg" alt="Paradís" class="logo" />
+      <img src="./assets/img/logo.svg" alt="Paradís" class="logo" ng-click="slideTo()" />
       <h2>a guarantee of success for any event</h2>
       <div ng-hide="mobile" class="row j-center">
         <p>
@@ -207,130 +207,113 @@
       </div>
 
       <div class="row j-center">
-        <button ng-click="turnPrev()">Prev</button>
-        <button ng-click="turnNext()">Next</button>
+        <button ng-click="turnPrev()" class="pri outline semi">Prev</button>
+        <button ng-click="turnNext()" class="pri outline semi">Next</button>
       </div>
     </div>
   </section>
 
-  <!--
-
   <section class="swiper-slide" id="spaces">
-    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
-    <h1>Spaces & Colaborations</h1>
-    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
-
-    <div class="row card">
-      <div class="card-content col f-center">
-        <h2>The perfect place</h2>
-        <p>
-          With presence in all cities of Spain, we are already a national leader
-          in the organization of events, with average more than 5000 events a
-          year，offering different types of services for 250,000 clients per
-          month, and currently manage more than 300 spaces.
-        </p>
-      </div>
-
-      <div class="img-wrapper">
-        <ui-carousel
-          slides="slidesSpace"
-          speed="900"
-          on-init="onCarouselInit()"
-          on-before-change="onCarouselBeforeChange()"
-          on-after-change="onCarouselAfterChange()"
-        >
-          <carousel-item>
-            <img
-              class="img-slide"
-              ng-src="{{ item.image }}"
-              alt="{{ item.title }}"
-            />
-          </carousel-item>
-        </ui-carousel>
-      </div>
+    <div class="title col">
+      <h1>Spaces & Colaborations</h1>
+      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
     </div>
 
-    <div class="row card final">
-      <div class="card-content col f-center">
-        <h2>Customers who trust on us</h2>
-        <ul>
-          <li>Catering FC Catering 7 years</li>
-          <li>Family Day SEAT 55.000 Pax</li>
-          <li>Final Four Basket 2.500pax</li>
-          <li>Fan Boulevard Trofeo CONDE GODO 20.000pax</li>
-          <li>Hospitality VIP WORLDBASKET 2.500pax</li>
-          <li>Cocktail Repsol 1.300pax</li>
-          <li>Cocktail dinner Congress against HIV 12.000pax</li>
-          <li>Anniversary EL CORTE INGLES 5.000pax</li>
-          <li>Congress MICROSOFT 6.500pax</li>
-          <li>CUP DAVIS Cocktail 12.000pax</li>
-          <li>Buffet GRAN PREMIO F1 Barcelona 1.250pax</li>
-          <li>Presentation GROUP MAZDA 3.000pax</li>
-          <li>CHRISTMAS DINNER of MANGO 1.600pax</li>
-          <li>Cocktail of Barcelona City Hall 1.300pax</li>
-          <li>Dinner BBVA 1.480pax</li>
-          <li>Cocktail Fundation ESADE 1.950pax</li>
-          <li>Open Bar Salon Auto SEAT 2.000pax</li>
-          <li>Cocktail presentation SEAT IBIZA 3.000pax</li>
-          <li>Catering official MOTO GP</li>
-          <li>Catering Conference European BCN 1.800pax</li>
-          <li>Anniversary NISSAN 9.500pax</li>
-          <li>SAP Convention 7.000pax</li>
-        </ul>
+    <div class="spaces">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide row card perfect">
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>The perfect place</h2>
+            <p ng-hide="mobile">
+              With presence in all cities of Spain, we are already a national leader in the organization of events, with
+              average more than 5000 events a year，offering different types of services for 250,000 clients per month,
+              and currently manage more than 300 spaces.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide row card customers">
+          <div class="overlay full"></div>
+
+          <div class="card-content col j-end full">
+            <h2>Customers who trust on us</h2>
+            <ul ng-hide="true">
+              <li>Catering FC Catering 7 years</li>
+              <li>Family Day SEAT 55.000 Pax</li>
+              <li>Final Four Basket 2.500pax</li>
+              <li>Fan Boulevard Trofeo CONDE GODO 20.000pax</li>
+              <li>Hospitality VIP WORLDBASKET 2.500pax</li>
+              <li>Cocktail Repsol 1.300pax</li>
+              <li>Cocktail dinner Congress against HIV 12.000pax</li>
+              <li>Anniversary EL CORTE INGLES 5.000pax</li>
+              <li>Congress MICROSOFT 6.500pax</li>
+              <li>CUP DAVIS Cocktail 12.000pax</li>
+              <li>Buffet GRAN PREMIO F1 Barcelona 1.250pax</li>
+              <li>Presentation GROUP MAZDA 3.000pax</li>
+              <li>CHRISTMAS DINNER of MANGO 1.600pax</li>
+              <li>Cocktail of Barcelona City Hall 1.300pax</li>
+              <li>Dinner BBVA 1.480pax</li>
+              <li>Cocktail Fundation ESADE 1.950pax</li>
+              <li>Open Bar Salon Auto SEAT 2.000pax</li>
+              <li>Cocktail presentation SEAT IBIZA 3.000pax</li>
+              <li>Catering official MOTO GP</li>
+              <li>Catering Conference European BCN 1.800pax</li>
+              <li>Anniversary NISSAN 9.500pax</li>
+              <li>SAP Convention 7.000pax</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="img-wrapper">
-        <img src="./assets/img/space9.jpg" alt="Customers" />
-      </div>
-    </div>
-
-    <div class="section-footer">
-      <p>
-        Exclusive and emblematic spaces, complemented by the best staging.
-      </p>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
 
   <section class="swiper-slide" id="contact">
-    <img class="ornament turn" src="./assets/img/fat.svg" alt="Ornament" />
-    <h1>Contact Us</h1>
-    <img class="ornament end" src="./assets/img/fat.svg" alt="Ornament" />
+    <div class="title col">
+      <h1>Contact Us</h1>
+      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
+    </div>
 
-    <div class="contact-box row">
-      <div class="contact-left col a-center">
-        <img src="../../assets/img/logo-madrid.svg" alt="Paradis España" />
-        <h2>España</h2>
-        <p>
-          BARCELONA
-        </p>
-        <a href="mailto:info@newparadis.com">info@newparadis.com</a>
-        <a href="tel:0034937714027">+34 93 771 4027</a>
-        <br />
-        <p>
-          MADRID
-        </p>
-        <a href="mailto:comercialmad@newparadis.com"
-          >comercialmad@newparadis.com</a
-        >
-        <a href="tel:0034914297303">+34 91 429 7303</a>
-      </div>
+    <div class="contact">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide row card">
+          <div class="overlay"></div>
 
-      <div class="contact-right col a-center">
-        <img src="../../assets/img/logo.svg" alt="Paradis Chengdu" />
-        <h2>Chengdu</h2>
-        <p>
-          Office 2803
-          <br />
-          Yintai Center Tower 3
-          <br />
-          Tianfu Avenue No.1199
-          <br />
-          Chengdu, China
-        </p>
-        <br />
-        <a href="mailto:cha@newparadis.com">cha@newparadis.com</a>
-        <a href="tel:008613395457018">+86 133 9545 7018</a>
+          <div class="card-content col j-end">
+            <h2>España</h2>
+            <p>
+              BARCELONA
+            </p>
+            <a href="mailto:info@newparadis.com">info@newparadis.com</a>
+            <a href="tel:0034937714027">+34 93 771 4027</a>
+            <br />
+            <p>
+              MADRID
+            </p>
+            <a href="mailto:comercialmad@newparadis.com">comercialmad@newparadis.com</a>
+            <a href="tel:0034914297303">+34 91 429 7303</a>
+          </div>
+          <div class="card-content col j-end">
+            <h2>Chengdu</h2>
+            <p>
+              Office 2803
+              <br />
+              Yintai Center Tower 3
+              <br />
+              Tianfu Avenue No.1199
+              <br />
+              Chengdu, China
+            </p>
+            <br />
+            <a href="mailto:cha@newparadis.com">cha@newparadis.com</a>
+            <a href="tel:008613395457018">+86 133 9545 7018</a>
+          </div>
+        </div>
       </div>
     </div>
-  </section> -->
+  </section>
 </div>

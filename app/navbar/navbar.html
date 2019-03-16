@@ -1,37 +1,35 @@
-<div ng-if="welcome" class="welcome flex f-center">
-</div>
+<div ng-if="welcome" class="welcome flex f-center"></div>
 
-<img ng-click="scrollTo('paradis')" src="../../assets/img/logo-menu.svg" alt="Paradis Chengdu" class="logo" />
+<img ng-click="scrollTo(0)" src="../../assets/img/logo-menu.svg" alt="Paradis Chengdu" class="logo" />
 
 <ul class="menu row j-end a-center">
   <li ng-click="scrollTo(1)">Since 1967</li>
   <li ng-click="scrollTo(2)">Catering & Events</li>
-  <li ng-click="scrollTo('gastrolab')">Gastrolab</li>
-  <li ng-click="scrollTo('weare')">We are what we eat</li>
-  <li ng-click="scrollTo('seal')">Star seal</li>
-  <li ng-click="scrollTo('spaces')">Spaces & Colaborations</li>
-  <li ng-click="scrollTo('contact')">Contact us</li>
-  <li class="lang flex f-center"><img src="../../assets/img/en.svg" alt="english">EN</li>
+  <li ng-click="scrollTo(3)">Gastrolab</li>
+  <li ng-click="scrollTo(4)">We are what we eat</li>
+  <li ng-click="scrollTo(5)">Star seal</li>
+  <li ng-click="scrollTo(6)">Spaces & Colaborations</li>
+  <li ng-click="scrollTo(7)">Contact us</li>
+  <li class="lang flex f-center"><img src="../../assets/img/en.svg" alt="english" />EN</li>
 </ul>
 
 <div class="burger" ng-click="switchMenu()"><i class="fas fa-ellipsis-v"></i></div>
 
 <div ng-if="mobile" class="mob-menu col f-center">
   <ul class="col a-center">
-    <li ng-click="scrollTo(1)">Since 1968</li>
+    <li ng-click="scrollTo(1)">Since 1967</li>
     <li ng-click="scrollTo(2)">Catering & Events</li>
-    <li ng-click="scrollTo('gastrolab')">Gastrolab</li>
-    <li ng-click="scrollTo('weare')">We are what we eat</li>
-    <li ng-click="scrollTo('seal')">Star seal</li>
-    <li ng-click="scrollTo('spaces')">Spaces & Colaborations</li>
-    <li ng-click="scrollTo('contact')">Contact us</li>
+    <li ng-click="scrollTo(3)">Gastrolab</li>
+    <li ng-click="scrollTo(4)">We are what we eat</li>
+    <li ng-click="scrollTo(5)">Star seal</li>
+    <li ng-click="scrollTo(6)">Spaces & Colaborations</li>
+    <li ng-click="scrollTo(7)">Contact us</li>
   </ul>
 
   <div class="col submenu">
     <div class="col a-center contact">
       <p>
-        Office 2803, Yintai Center Tower 3, Tianfu Avenue No.1199, Chengdu,
-        China
+        Office 2803, Yintai Center Tower 3, Tianfu Avenue No.1199, Chengdu, China
       </p>
       <a href="mailto:cha@newparadis.com">cha@newparadis.com</a>
       <a href="tel:008613395457018">+86 133 9545 7018</a>

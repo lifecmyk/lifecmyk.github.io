@@ -2,7 +2,7 @@
 a[class*="btn"],
 button {
   cursor: pointer;
-  padding: 15px 30px !important;
+  padding: 10px 30px !important;
   background-color: transparent;
   transition: 0.2s;
 }
@@ -99,6 +99,11 @@ button[class*="round"] {
   border-radius: 50px;
 }
 
+a[class*="semi"],
+button[class*="semi"] {
+  border-radius: 7px;
+}
+
 a[class*="outline"],
 button[class*="outline"] {
   background-color: transparent !important;
@@ -107,6 +112,7 @@ button[class*="outline"] {
   
 }
 
-a[class*="outline pri"] {
+a[class*="pri outline"], 
+button[class*="pri outline"] {
   color: $pri !important;
 }

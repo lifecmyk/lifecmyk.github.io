@@ -1,7 +1,7 @@
 angular.module("app").controller("homeController", function($scope, $timeout) {
   info("Home loaded");
 
-  let swiper = new Swiper(".swiper-container", {
+  const swiper = new Swiper(".swiper-container", {
     direction: "vertical",
     speed: 800,
     slidesPerView: 1,
@@ -24,7 +24,7 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
   });
 
   $timeout(() => {
-    let since = new Swiper(".since", {
+    const since = new Swiper(".since", {
       direction: "horizontal",
       speed: 800,
       loop: true,
@@ -37,7 +37,7 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
       }
     });
 
-    let catering = new Swiper(".catering", {
+    const catering = new Swiper(".catering", {
       direction: "horizontal",
       speed: 800,
       loop: true,
@@ -50,7 +50,20 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
       }
     });
 
-    let weare = new Swiper(".weare", {
+    const weare = new Swiper(".weare", {
+      direction: "horizontal",
+      speed: 800,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+
+    const spaces = new Swiper(".spaces", {
       direction: "horizontal",
       speed: 800,
       loop: true,
@@ -70,9 +83,9 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
 
   $scope.turnPrev = () => {
     $("#flipbook").turn("previous");
-  }
-  
+  };
+
   $scope.turnNext = () => {
     $("#flipbook").turn("next");
-  }
+  };
 });
