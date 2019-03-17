@@ -28,7 +28,7 @@
   <section class="swiper-slide" id="since">
     <div class="title col">
       <h1>Since 1967</h1>
-      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
+      <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
 
     <div class="since">
@@ -63,6 +63,15 @@
         </div>
 
         <div class="swiper-slide row card friends">
+          <div class="bg">
+            <div class="swiper-wrapper">
+              <img src="./assets/img/friends1.jpg" alt="Friends" class="swiper-slide" />
+              <img src="./assets/img/friends2.jpg" alt="Friends" class="swiper-slide" />
+              <img src="./assets/img/friends3.jpg" alt="Friends" class="swiper-slide" />
+              <img src="./assets/img/friends4.jpg" alt="Friends" class="swiper-slide" />
+            </div>
+          </div>
+
           <div class="overlay"></div>
 
           <div class="card-content col j-end">
@@ -83,7 +92,7 @@
   <section class="swiper-slide" id="catering">
     <div class="title col">
       <h1>Catering & Events</h1>
-      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
+      <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
 
     <div class="catering">
@@ -91,10 +100,22 @@
         <div class="swiper-slide row card">
           <div class="bg">
             <div class="swiper-wrapper">
-              <img src="./assets/img/high1.jpg" alt="Catering" class="swiper-slide">
-              <img src="./assets/img/high2.jpg" alt="Catering" class="swiper-slide">
-              <img src="./assets/img/high3.jpg" alt="Catering" class="swiper-slide">
-              <img src="./assets/img/high4.jpg" alt="Catering" class="swiper-slide">
+              <div class="swiper-slide">
+                <img src="./assets/img/high1.jpg" alt="Catering" />
+                <h3>We create choreography but we are not a ballet</h3>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/high2.jpg" alt="Catering" />
+                <h3>We create illusions but we are not magicians</h3>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/high3.jpg" alt="Catering" />
+                <h3>We create style but we are not poets</h3>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/high4.jpg" alt="Catering" />
+                <h3>We create sensations and we are always ready for event organization</h3>
+              </div>
             </div>
           </div>
           <div class="overlay"></div>
@@ -111,7 +132,14 @@
           </div>
         </div>
 
-        <div class="swiper-slide row card service">
+        <div class="swiper-slide row card">
+          <div class="bg">
+            <div class="swiper-wrapper">
+              <img src="./assets/img/service1.jpg" alt="Service" class="swiper-slide" />
+              <img src="./assets/img/service2.jpg" alt="Service" class="swiper-slide" />
+              <img src="./assets/img/service3.jpg" alt="Service" class="swiper-slide" />
+            </div>
+          </div>
           <div class="overlay"></div>
 
           <div class="card-content col j-end">
@@ -122,7 +150,19 @@
           </div>
         </div>
 
-        <div class="swiper-slide row card food">
+        <div class="swiper-slide row card">
+          <div class="bg">
+            <div class="swiper-wrapper">
+              <img src="./assets/img/food1.jpg" alt="Food" class="swiper-slide" />
+              <img src="./assets/img/food2.jpg" alt="Food" class="swiper-slide" />
+              <img src="./assets/img/food3.jpg" alt="Food" class="swiper-slide" />
+              <img src="./assets/img/food4.jpg" alt="Food" class="swiper-slide" />
+              <img src="./assets/img/food5.jpg" alt="Food" class="swiper-slide" />
+              <img src="./assets/img/food6.jpg" alt="Food" class="swiper-slide" />
+              <img src="./assets/img/food7.jpg" alt="Food" class="swiper-slide" />
+              <img src="./assets/img/food8.jpg" alt="Food" class="swiper-slide" />
+            </div>
+          </div>
           <div class="overlay"></div>
 
           <div class="card-content col j-end">
@@ -144,13 +184,18 @@
   <section class="swiper-slide" id="gastrolab">
     <div class="title col">
       <h1>Gastrolab</h1>
-      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
+      <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
 
     <div class="gastrolab">
       <div class="swiper-wrapper">
-        <div class="swiper-slide row card iplusd">
+        <div class="swiper-slide row card">
           <div class="overlay"></div>
+
+          <div class="video col f-center">
+            <div class="video-overlay"></div>
+            <video playsinline loop id="videoBg" src="../../assets/img/gastrolab.mp4" type="video/mp4"></video>
+          </div>
 
           <div class="card-content col j-end">
             <h2>I+D</h2>
@@ -160,6 +205,29 @@
             </p>
           </div>
         </div>
+
+        <div class="swiper-slide row card">
+          <div class="bg">
+            <div class="swiper-wrapper">
+              <img src="./assets/img/lab1.jpg" alt="Gastrolab" class="swiper-slide" />
+              <img src="./assets/img/lab2.jpg" alt="Gastrolab" class="swiper-slide" />
+              <img src="./assets/img/lab3.jpg" alt="Gastrolab" class="swiper-slide" />
+            </div>
+          </div>
+
+          <div class="overlay"></div>
+
+          <div class="card-content col j-end">
+            <h2>Vegan & Crudivegan</h2>
+            <h2>Meat & Fish</h2>
+            <h2>Desserts</h2>
+            <p>For more information</p>
+            <button ng-click="contact()" class="pri outline semi">Contact us</button>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
@@ -167,12 +235,20 @@
   <section class="swiper-slide" id="weare">
     <div class="title col">
       <h1>We are what we eat</h1>
-      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
+      <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
 
     <div class="weare">
       <div class="swiper-wrapper">
-        <div class="swiper-slide row card ecologic">
+        <div class="swiper-slide row card">
+          <div class="bg">
+            <div class="swiper-wrapper">
+              <img src="./assets/img/ecologic1.jpg" alt="Ecologic" class="swiper-slide" />
+              <img src="./assets/img/ecologic2.jpg" alt="Ecologic" class="swiper-slide" />
+              <img src="./assets/img/ecologic3.jpg" alt="Ecologic" class="swiper-slide" />
+            </div>
+          </div>
+
           <div class="overlay"></div>
 
           <div class="card-content col j-end">
@@ -187,14 +263,30 @@
           </div>
         </div>
 
-        <div class="swiper-slide row card responsable">
+        <div class="swiper-slide row card">
+          <div class="bg">
+            <div class="swiper-wrapper">
+              <img src="./assets/img/responsable1.jpg" alt="Responsable" class="swiper-slide" />
+              <img src="./assets/img/responsable2.jpg" alt="Responsable" class="swiper-slide" />
+              <img src="./assets/img/responsable3.jpg" alt="Responsable" class="swiper-slide" />
+              <img src="./assets/img/responsable4.jpg" alt="Responsable" class="swiper-slide" />
+            </div>
+          </div>
+
           <div class="overlay"></div>
 
+          <div class="logos flex j-end a-start">
+            <img src="../../assets/img/la-morana.png" alt="La Morana" />
+            <img src="../../assets/img/ccpae.svg" alt="CCPAE" />
+          </div>
+
           <div class="card-content col j-end">
-            <h2>Responsable</h2>
+            <h3>100% Ecologic & natural</h3>
+            <h2>La Morana</h2>
             <p ng-hide="mobile">
-              With a responsible and artisan elaboration, treated with the maximum respect in all its process, to
-              guarantee the maximum quality of the product.
+              In La Morana we want to do our bit to this way of living respecting the cycles of the earth and nature,
+              reaching people with plant and animal products in the best conditions of aging, conservation and flavor.
+              This is our reason for being, and our humble way of giving back to nature all that it gives us.
             </p>
           </div>
         </div>
@@ -206,17 +298,36 @@
   </section>
 
   <section class="swiper-slide" id="seal">
-    <div class="seal col f-center">
-      <div id="flipbook">
-        <div><img src="../../assets/img/page4.jpg" alt="page" /></div>
-        <div><img src="../../assets/img/page1.jpg" alt="page" /></div>
-        <div><img src="../../assets/img/page2.jpg" alt="page" /></div>
-        <div><img src="../../assets/img/page3.jpg" alt="page" /></div>
-      </div>
+    <div class="title col">
+      <h1>We are what we eat</h1>
+      <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
+    </div>
 
-      <div class="row j-center">
-        <button ng-click="turnPrev()" class="pri outline semi">Prev</button>
-        <button ng-click="turnNext()" class="pri outline semi">Next</button>
+    <div class="seal">
+      <div class="card row">
+        <div class="card-content col j-end">
+          <h2>
+            Star Seal
+          </h2>
+          <p ng-hide="mobile">
+            These are some of the stars that have been with us all of this years.
+          </p>
+        </div>
+
+        <div class="col f-center book">
+          <div id="flipbook">
+            <div><img src="../../assets/img/page1.jpg" alt="Star Seal" /></div>
+            <div><img src="../../assets/img/page2.jpg" alt="Star Seal" /></div>
+            <div><img src="../../assets/img/page3.jpg" alt="Star Seal" /></div>
+            <div><img src="../../assets/img/page4.jpg" alt="Star Seal" /></div>
+            <div><img src="../../assets/img/page5.jpg" alt="Star Seal" /></div>
+          </div>
+
+          <div class="row j-center">
+            <button ng-click="turnPrev()" class="pri outline semi">Prev</button>
+            <button ng-click="turnNext()" class="pri outline semi">Next</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -224,12 +335,25 @@
   <section class="swiper-slide" id="spaces">
     <div class="title col">
       <h1>Spaces & Colaborations</h1>
-      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
+      <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
 
     <div class="spaces">
       <div class="swiper-wrapper">
         <div class="swiper-slide row card perfect">
+          <div class="bg">
+            <div class="swiper-wrapper">
+              <img src="./assets/img/space1.jpg" alt="Spaces & Colaborations" class="swiper-slide" />
+              <img src="./assets/img/space2.jpg" alt="Spaces & Colaborations" class="swiper-slide" />
+              <img src="./assets/img/space3.jpg" alt="Spaces & Colaborations" class="swiper-slide" />
+              <img src="./assets/img/space4.jpg" alt="Spaces & Colaborations" class="swiper-slide" />
+              <img src="./assets/img/space5.jpg" alt="Spaces & Colaborations" class="swiper-slide" />
+              <img src="./assets/img/space6.jpg" alt="Spaces & Colaborations" class="swiper-slide" />
+              <img src="./assets/img/space7.jpg" alt="Spaces & Colaborations" class="swiper-slide" />
+              <img src="./assets/img/space8.jpg" alt="Spaces & Colaborations" class="swiper-slide" />
+            </div>
+          </div>
+
           <div class="overlay"></div>
 
           <div class="card-content col j-end">
@@ -245,8 +369,12 @@
         <div class="swiper-slide row card customers">
           <div class="overlay full"></div>
 
-          <div class="card-content col j-end full">
-            <h2>Customers who trust on us</h2>
+          <div class="card-content col j-end">
+            <h2>Customers who<br />trust on us</h2>
+            <p ng-hide="mobile">
+              After so many years, we have had the opportunity to work for the most demanding clients, and meet their
+              needs.
+            </p>
             <ul ng-hide="true">
               <li>Catering FC Catering 7 years</li>
               <li>Family Day SEAT 55.000 Pax</li>
@@ -283,7 +411,7 @@
   <section class="swiper-slide" id="contact">
     <div class="title col">
       <h1>Contact Us</h1>
-      <img class="ornament" src="./assets/img/slim.svg" alt="Ornament" />
+      <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
 
     <div class="contact">
@@ -291,7 +419,7 @@
         <div class="swiper-slide row card">
           <div class="overlay"></div>
 
-          <div class="card-content col j-end">
+          <div class="card-content col j-end contact-bg">
             <h2>España</h2>
             <p>
               BARCELONA

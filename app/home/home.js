@@ -9,6 +9,11 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     mousewheel: true
   });
 
+  $timeout(() => {
+    const mainSwiper = document.querySelector(".swiper-container").swiper;
+    $scope.contact = () => mainSwiper.slideTo(7);
+  }, 1000);
+
   if (window.innerWidth <= 1220) {
     $scope.mobile = true;
   } else {
@@ -39,6 +44,19 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     });
 
     const catering = new Swiper(".catering", {
+      direction: "horizontal",
+      speed: 800,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+
+    const gastrolab = new Swiper(".gastrolab", {
       direction: "horizontal",
       speed: 800,
       loop: true,
@@ -88,6 +106,21 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
       autoplay: true
     });
   });
+
+  let videoBg = document.getElementById("videoBg");
+
+  videoBg.addEventListener("canplay", () => {
+    videoBg.play();
+  });
+
+  $timeout(() => {
+    if (window.innerWidth <= 1200) {
+      videoBg.play();
+    }
+    videoBg.addEventListener("canplay", () => {
+      videoBg.play();
+    });
+  }, 2000);
 
   $("#flipbook").turn({
     display: "single"
