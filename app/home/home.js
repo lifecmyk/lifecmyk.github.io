@@ -6,7 +6,8 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     speed: 800,
     slidesPerView: 1,
     spaceBetween: 0,
-    mousewheel: true
+    mousewheel: true,
+    hashNavigation: true
   });
 
   $timeout(() => {
@@ -114,7 +115,7 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
       videoBg.play();
     }
     videoBg.play();
-    
+
     videoBg.addEventListener("canplay", () => {
       videoBg.play();
     });

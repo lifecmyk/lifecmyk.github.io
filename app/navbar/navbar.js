@@ -1,7 +1,7 @@
 angular.module("app").controller("navController", function($scope, $timeout) {
   info("Nav loaded");
 
-  $scope.welcome = true;
+  $scope.welcome = false;
 
   $timeout(() => {
     $scope.welcome = false;

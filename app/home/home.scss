@@ -193,15 +193,14 @@
 
         h3 {
           position: absolute;
-          top: 40px;
-          right: 40px;
-          max-width: 400px;
-          font-size: 40px;
-          text-align: right;
-          font-family: "Kaushan Script";
+          top: 45%;
+          left: 80px;
+          transform: translateY(-50%);
+          font-size: 50px;
+          font-family: "Great Vibes";
+          line-height: 1;
           color: #fff;
           text-shadow: 0 2px 5px rgba(#000, 0.7);
-          z-index: 2;
         }
       }
 
@@ -423,7 +422,7 @@
         padding: 0 0 80px 80px;
 
         h3 {
-          font-family: "Kaushan Script";
+          font-family: "Great Vibes";
           margin-bottom: 2%;
         }
 
