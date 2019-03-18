@@ -113,6 +113,8 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     if (window.innerWidth <= 1200) {
       videoBg.play();
     }
+    videoBg.play();
+    
     videoBg.addEventListener("canplay", () => {
       videoBg.play();
     });
