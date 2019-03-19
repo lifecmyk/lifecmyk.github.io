@@ -13,6 +13,28 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
   $timeout(() => {
     const mainSwiper = document.querySelector(".swiper-container").swiper;
     $scope.contact = () => mainSwiper.slideTo(7);
+
+    $scope.lazySlide = false;
+    
+    mainSwiper.on("slideChange", () => {
+      let actual = mainSwiper.activeIndex;
+      log(mainSwiper.slides[actual]);
+
+      mainSwiper.slides[actual].del("none");
+
+      if (mainSwiper.slides[actual - 1] !== undefined) {
+        mainSwiper.slides[actual - 1].del("none");
+      };
+      if (mainSwiper.slides[actual + 1] !== undefined) {
+        mainSwiper.slides[actual + 1].del("none");
+      };
+      if (mainSwiper.slides[actual + 2] !== undefined) {
+        mainSwiper.slides[actual + 2].add("none");
+      };
+      if (mainSwiper.slides[actual - 2] !== undefined) {
+        mainSwiper.slides[actual - 2].add("none");
+      };
+    });
   }, 1000);
 
   if (window.innerWidth <= 1220) {

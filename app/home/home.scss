@@ -1,6 +1,10 @@
 @import "../../assets/scss/vars";
 
 .home-box {
+  .none {
+    visibility: hidden !important;
+  }
+
   #paradis {
     background: url("../../assets/img/paradis-chengdu.jpg") no-repeat center;
     background-size: cover;
