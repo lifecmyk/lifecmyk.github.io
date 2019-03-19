@@ -10,30 +10,74 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     hashNavigation: true
   });
 
+  let videoBg = document.getElementById("videoBg");
+
   $timeout(() => {
     const mainSwiper = document.querySelector(".swiper-container").swiper;
     $scope.contact = () => mainSwiper.slideTo(7);
 
-    $scope.lazySlide = false;
-    
     mainSwiper.on("slideChange", () => {
       let actual = mainSwiper.activeIndex;
-      log(mainSwiper.slides[actual]);
-
       mainSwiper.slides[actual].del("none");
 
+      // show from +/- 1 slides
       if (mainSwiper.slides[actual - 1] !== undefined) {
         mainSwiper.slides[actual - 1].del("none");
-      };
+      }
       if (mainSwiper.slides[actual + 1] !== undefined) {
         mainSwiper.slides[actual + 1].del("none");
-      };
+      }
+
+      // hide from +/- 2 slides
       if (mainSwiper.slides[actual + 2] !== undefined) {
         mainSwiper.slides[actual + 2].add("none");
-      };
+      }
       if (mainSwiper.slides[actual - 2] !== undefined) {
         mainSwiper.slides[actual - 2].add("none");
-      };
+      }
+      if (mainSwiper.slides[actual + 3] !== undefined) {
+        mainSwiper.slides[actual + 3].add("none");
+      }
+      if (mainSwiper.slides[actual - 3] !== undefined) {
+        mainSwiper.slides[actual - 3].add("none");
+      }
+      if (mainSwiper.slides[actual + 4] !== undefined) {
+        mainSwiper.slides[actual + 4].add("none");
+      }
+      if (mainSwiper.slides[actual - 4] !== undefined) {
+        mainSwiper.slides[actual - 4].add("none");
+      }
+      if (mainSwiper.slides[actual + 5] !== undefined) {
+        mainSwiper.slides[actual + 5].add("none");
+      }
+      if (mainSwiper.slides[actual - 5] !== undefined) {
+        mainSwiper.slides[actual - 5].add("none");
+      }
+      if (mainSwiper.slides[actual + 6] !== undefined) {
+        mainSwiper.slides[actual + 6].add("none");
+      }
+      if (mainSwiper.slides[actual - 6] !== undefined) {
+        mainSwiper.slides[actual - 6].add("none");
+      }
+      if (mainSwiper.slides[actual + 7] !== undefined) {
+        mainSwiper.slides[actual + 7].add("none");
+      }
+      if (mainSwiper.slides[actual - 7] !== undefined) {
+        mainSwiper.slides[actual - 7].add("none");
+      }
+      if (mainSwiper.slides[actual + 8] !== undefined) {
+        mainSwiper.slides[actual + 8].add("none");
+      }
+      if (mainSwiper.slides[actual - 8] !== undefined) {
+        mainSwiper.slides[actual - 8].add("none");
+      }
+
+      //play on video slide & pause on out
+      if (actual === 3) {
+        videoBg.play();
+      } else {
+        videoBg.pause();
+      }
     });
   }, 1000);
 
@@ -130,9 +174,7 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     });
   });
 
-  let videoBg = document.getElementById("videoBg");
-
-  $timeout(() => {
+  /* $timeout(() => {
     if (window.innerWidth <= 1200) {
       videoBg.play();
     }
@@ -141,10 +183,10 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     videoBg.addEventListener("canplay", () => {
       videoBg.play();
     });
-  }, 2000);
+  }, 2000); */
 
   $("#flipbook").turn({
-    display: "single"
+    duration: 1200
   });
 
   $scope.turnPrev = () => {
