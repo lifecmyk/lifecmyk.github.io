@@ -328,6 +328,23 @@
         }
       }
 
+      .card-content {
+        position: relative;
+        width: 40%;
+        max-width: 500px;
+        height: 100%;
+        color: #fff;
+        padding: 0 0 80px 80px;
+
+        h2 {
+          margin-bottom: 2%;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
       .list {
         position: absolute;
         bottom: 80px;
