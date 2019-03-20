@@ -10,8 +10,8 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     hashNavigation: true
   });
 
-  let videoBg = document.getElementById("videoBg");
-
+  let videoBg = document.querySelector("#videoBg");
+  
   $timeout(() => {
     const mainSwiper = document.querySelector(".swiper-container").swiper;
     $scope.contact = () => mainSwiper.slideTo(7);
@@ -126,7 +126,6 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     const gastrolab = new Swiper(".gastrolab", {
       direction: "horizontal",
       speed: 800,
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
       effect: "fade",
@@ -135,6 +134,20 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
         prevEl: ".swiper-button-prev"
       }
     });
+
+    $timeout(() => {
+      const labSwiper = document.querySelector(".gastrolab").swiper;
+
+      labSwiper.on("slideChange", () => {
+        let actual = labSwiper.activeIndex;
+
+        if (actual === 0) {
+          videoBg.play();
+        } else {
+          videoBg.pause();
+        }
+      });
+    }, 1000);
 
     const weare = new Swiper(".weare", {
       direction: "horizontal",
@@ -170,7 +183,9 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
       slidesPerView: 1,
       spaceBetween: 0,
       effect: "fade",
-      autoplay: true
+      autoplay: {
+        delay: 1500
+      }
     });
   });
 
