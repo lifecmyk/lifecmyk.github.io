@@ -189,16 +189,25 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     });
   });
 
-  /* $timeout(() => {
-    if (window.innerWidth <= 1200) {
-      videoBg.play();
-    }
-    videoBg.play();
-
-    videoBg.addEventListener("canplay", () => {
-      videoBg.play();
-    });
-  }, 2000); */
+  $scope.catering = true;
+  $scope.classic = false;
+  $scope.pomal = false;
+  
+  $scope.cateringEvents = () => {
+    $scope.classic = false;
+    $scope.pomal = false;
+    $scope.catering = true;
+  }
+  $scope.theClassic = () => {
+    $scope.catering = false;
+    $scope.pomal = false;
+    $scope.classic = true;
+  }
+  $scope.vinaPomal = () => {
+    $scope.catering = false;
+    $scope.classic = false;
+    $scope.pomal = true;
+  }
 
   $("#flipbook").turn({
     duration: 1200

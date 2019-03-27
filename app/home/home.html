@@ -374,9 +374,8 @@
                   <h2>Vegan & Crudivegan</h2>
                   <h4>Meat & Fish</h4>
                   <h4>Desserts</h4>
-                  <p>For more information</p>
                   <button ng-click="contact()" class="pri outline semi">
-                    Contact us
+                    For more information
                   </button>
                 </div>
               </div>
@@ -387,9 +386,8 @@
                   <h2>Vegan & Crudivegan</h2>
                   <h4>Meat & Fish</h4>
                   <h4>Desserts</h4>
-                  <p>For more information</p>
                   <button ng-click="contact()" class="pri outline semi">
-                    Contact us
+                    For more information
                   </button>
                 </div>
               </div>
@@ -401,9 +399,8 @@
                   <h4>Vegan & Crudivegan</h4>
                   <h2>Meat & Fish</h2>
                   <h4>Desserts</h4>
-                  <p>For more information</p>
                   <button ng-click="contact()" class="pri outline semi">
-                    Contact us
+                    For more information
                   </button>
                 </div>
               </div>
@@ -414,9 +411,8 @@
                   <h4>Vegan & Crudivegan</h4>
                   <h2>Meat & Fish</h2>
                   <h4>Desserts</h4>
-                  <p>For more information</p>
                   <button ng-click="contact()" class="pri outline semi">
-                    Contact us
+                    For more information
                   </button>
                 </div>
               </div>
@@ -427,9 +423,8 @@
                   <h4>Vegan & Crudivegan</h4>
                   <h2>Meat & Fish</h2>
                   <h4>Desserts</h4>
-                  <p>For more information</p>
                   <button ng-click="contact()" class="pri outline semi">
-                    Contact us
+                    For more information
                   </button>
                 </div>
               </div>
@@ -440,9 +435,8 @@
                   <h4>Vegan & Crudivegan</h4>
                   <h2>Meat & Fish</h2>
                   <h4>Desserts</h4>
-                  <p>For more information</p>
                   <button ng-click="contact()" class="pri outline semi">
-                    Contact us
+                    For more information
                   </button>
                 </div>
               </div>
@@ -454,9 +448,8 @@
                   <h4>Vegan & Crudivegan</h4>
                   <h4>Meat & Fish</h4>
                   <h2>Desserts</h2>
-                  <p>For more information</p>
                   <button ng-click="contact()" class="pri outline semi">
-                    Contact us
+                    For more information
                   </button>
                 </div>
               </div>
@@ -651,6 +644,30 @@
               events a year，offering different types of services for 250,000
               clients per month, and currently manage more than 300 spaces.
             </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide row card video-events">
+          <div class="video-content row j-center a-end">
+              <video ng-if="catering === true" controls id="videoBg">
+                <source src="./assets/img/catering-events.mp4" type="video/mp4">
+              </video>
+              <video ng-if="classic === true" controls id="videoBg">
+                <source src="./assets/img/la-liga_el-clasico.mp4" type="video/mp4">
+              </video>
+              <video ng-if="pomal === true" controls id="videoBg">
+                <source src="./assets/img/vina-pomal.mp4" type="video/mp4">
+              </video>
+              
+              <ul class="col">
+                <li class="text">
+                    We are the first catering and events company that got the premium supplier certificate of Eventsost in europe.
+                </li>
+                <li class="img"><img src="./assets/img/eventsost.png" alt="Eventsost"></li>
+                <li ng-click="cateringEvents()">Catering events</li>
+                <li ng-click="theClassic()">The Classic</li>
+                <li ng-click="vinaPomal()">Catering events</li>
+              </ul>
           </div>
         </div>
 
