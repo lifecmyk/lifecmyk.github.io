@@ -1,7 +1,7 @@
 angular.module("app").controller("navController", function($scope, $timeout) {
   info("Nav loaded");
 
-  $scope.welcome = false;
+  $scope.welcome = true;
 
   $timeout(() => {
     $scope.welcome = false;
@@ -67,5 +67,5 @@ angular.module("app").controller("navController", function($scope, $timeout) {
         _(".menu li").del("active");
       }
     });
-  }, 1000);
+  }, 4000);
 });

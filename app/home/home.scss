@@ -491,6 +491,11 @@
         p {
           font-size: 14px;
         }
+
+        img {
+          width: 200px;
+          margin: 20px 0;
+        }
       }
     }
   }
@@ -706,35 +711,6 @@
             &:hover {
               background: $pri;
               color: #000;
-            }
-          }
-
-          .text {
-            cursor: default;
-            max-width: 300px;
-            border: none;
-            font-size: 14px;
-            padding: 0;
-            
-            &:hover {
-              background: transparent;
-              color: $pri;
-            }
-          }
-          
-          .img {
-            cursor: default;
-            width: 200px;
-            border: none;
-            padding: 0;
-
-            img {
-              width: 100%;
-            }
-
-            &:hover {
-              background: transparent;
-              color: $pri;
             }
           }
         }
