@@ -1,11 +1,11 @@
 angular.module("app").controller("navController", function($scope, $timeout) {
   info("Nav loaded");
 
-  $scope.welcome = true;
+  $scope.welcome = false;
 
   $timeout(() => {
     $scope.welcome = false;
-  }, 3000);
+  }, 4000);
 
   $scope.switchMenu = () => {
     _(".mob-menu").tog("active");
@@ -35,7 +35,10 @@ angular.module("app").controller("navController", function($scope, $timeout) {
 
   $timeout(() => {
     const mainSwiper = document.querySelector(".swiper-container").swiper;
-    $scope.scrollTo = i => mainSwiper.slideTo(i);
+    $scope.scrollTo = i => {
+      mainSwiper.slideTo(i)
+      _(".mob-menu").tog("active");
+    };
 
     mainSwiper.on("slideChange", () => {
       $scope.slide = mainSwiper.activeIndex;
@@ -63,6 +66,9 @@ angular.module("app").controller("navController", function($scope, $timeout) {
       } else if (mainSwiper.activeIndex === 7) {
         _(".menu li").del("active");
         _(".menu li")[6].add("active");
+      } else if (mainSwiper.activeIndex === 8) {
+        _(".menu li").del("active");
+        _(".menu li")[7].add("active");
       } else {
         _(".menu li").del("active");
       }

@@ -11,7 +11,7 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
   });
 
   let videoBg = document.querySelector("#videoBg");
-  
+
   $timeout(() => {
     const mainSwiper = document.querySelector(".swiper-container").swiper;
     $scope.contact = () => mainSwiper.slideTo(7);
@@ -71,6 +71,12 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
       if (mainSwiper.slides[actual - 8] !== undefined) {
         mainSwiper.slides[actual - 8].add("none");
       }
+      if (mainSwiper.slides[actual + 9] !== undefined) {
+        mainSwiper.slides[actual + 9].add("none");
+      }
+      if (mainSwiper.slides[actual - 10] !== undefined) {
+        mainSwiper.slides[actual - 10].add("none");
+      }
 
       //play on video slide & pause on out
       if (actual === 3) {
@@ -83,8 +89,23 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
 
   if (window.innerWidth <= 1220) {
     $scope.mobile = true;
+
+    $timeout(() => {
+      $("#flipbook").turn({
+        duration: 1200,
+        autoCenter: true,
+        display: "single"
+      });
+    }, 2000);
   } else {
     $scope.mobile = false;
+
+    $timeout(() => {
+      $("#flipbook").turn({
+        duration: 1200,
+        autoCenter: true
+      });
+    }, 2000);
   }
 
   window.addEventListener("resize", e => {
@@ -192,26 +213,31 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
   $scope.catering = true;
   $scope.classic = false;
   $scope.pomal = false;
-  
+
   $scope.cateringEvents = () => {
     $scope.classic = false;
     $scope.pomal = false;
     $scope.catering = true;
-  }
+    _(".classic-btn").del("selected");
+    _(".vina-btn").del("selected");
+    _(".catering-btn").add("selected");
+  };
   $scope.theClassic = () => {
     $scope.catering = false;
     $scope.pomal = false;
     $scope.classic = true;
-  }
+    _(".catering-btn").del("selected");
+    _(".vina-btn").del("selected");
+    _(".classic-btn").add("selected");
+  };
   $scope.vinaPomal = () => {
     $scope.catering = false;
     $scope.classic = false;
     $scope.pomal = true;
-  }
-
-  $("#flipbook").turn({
-    duration: 1200
-  });
+    _(".catering-btn").del("selected");
+    _(".classic-btn").del("selected");
+    _(".vina-btn").add("selected");
+  };
 
   $scope.turnPrev = () => {
     $("#flipbook").turn("previous");

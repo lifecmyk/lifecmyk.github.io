@@ -286,7 +286,7 @@
         content: "VIDEO";
         position: absolute;
         top: 0;
-        LEFT: 40px;
+        left: 40px;
         writing-mode: vertical-rl;
         transform: rotate(180deg) translateY(13%);
         color: #fff;
@@ -501,6 +501,70 @@
   }
 
   #seal {
+    .seal {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+
+      .card {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        z-index: 0;
+
+        .book {
+          width: 90%;
+          height: 100%;
+
+          #flipbook {
+            width: 100%;
+            height: 70%;
+            margin-bottom: 20px;
+
+            .page {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-image: linear-gradient(right, #fff 95%, #cacaca 100%);
+              box-shadow: inset 0 0 10px 0 rgba(#000, 0.4), inset 0 0 2px 0 rgba(#000, 0.9) !important;
+
+              img {
+                width: calc(100% - 40px);
+                height: calc(100% - 40px);
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+
+            .odd {
+              background-image: linear-gradient(right, #fff 95%, #cacaca 100%);
+            }
+            .even {
+              background-image: linear-gradient(left, #fff 95%, #dadada 100%);
+            }
+          }
+
+          .buttons {
+            button {
+              margin: 0 10px;
+
+              &:hover {
+                background: $pri !important;
+                border-color: $pri !important;
+                color: #000 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #videos {
     .title {
       position: absolute;
       top: 0;
@@ -519,82 +583,71 @@
       }
     }
 
-    .seal {
+    .videos {
       position: relative;
       width: 100%;
       height: 100%;
       z-index: 0;
+    }
 
-      .card {
-        position: relative;
-        bottom: 0;
+    .card {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+
+      .bg {
+        position: absolute;
+        top: 0;
         left: 0;
+        width: 100%;
         height: 100%;
         z-index: 0;
 
-        .card-content {
-          position: relative;
-          width: 40%;
-          max-width: 500px;
+        img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .video-content {
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+
+        video {
+          width: calc(100% - 300px);
           height: 100%;
-          color: #fff;
-          padding: 0 0 80px 80px;
-
-          h2 {
-            margin-bottom: 2%;
-          }
-
-          p {
-            font-size: 14px;
-          }
+          background: #000;
+          box-shadow: 0 5px 20px 0 rgba(#000, 0.4);
         }
 
-        .book {
-          width: 100%;
+        ul {
+          width: 300px;
           height: 100%;
+          padding: 40px;
 
-          #flipbook {
-            width: 80%;
-            height: 70%;
-            background: #000;
-            background-image: linear-gradient(left, #000 30%, #111 50%);
-            box-shadow: 0 5px 10px 0 rgba(#000, 0.7);
-            margin-bottom: 20px;
+          li {
+            cursor: pointer;
+            color: $pri;
+            padding: 10px 20px;
+            border: 1px solid $pri;
+            border-radius: 7px;
+            margin-top: 20px;
+            transition: 0.2s;
 
-            .page-wrapper {
-              width: 100%;
-              height: 100%;
-            }
-
-            .page {
-              width: 100%;
-              height: 100%;
-              background-image: linear-gradient(right, #fff 95%, #cacaca 100%);
-
-              img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-              }
-            }
-
-            .odd {
-              background-image: linear-gradient(right, #fff 95%, #cacaca 100%);
-            }
-            .even {
-              background-image: linear-gradient(left, #fff 95%, #dadada 100%);
+            &:hover {
+              background: $pri;
+              color: #000;
             }
           }
 
-          button {
-            margin: 0 10px;
-
-            &:hover {
-              background: $pri !important;
-              border-color: $pri !important;
-              color: #000 !important;
-            }
+          .selected {
+            background: $pri;
+            color: #000;
           }
         }
       }
@@ -690,11 +743,11 @@
         width: 100%;
         height: 100%;
         padding-bottom: 8vh;
-        
+
         video {
           height: 70%;
         }
-        
+
         ul {
           height: 70%;
           padding: 40px;
@@ -706,7 +759,7 @@
             border: 1px solid $pri;
             border-radius: 7px;
             margin-top: 20px;
-            transition: .2s;
+            transition: 0.2s;
 
             &:hover {
               background: $pri;
@@ -726,7 +779,7 @@
       background: url("../../assets/img/space1.jpg") no-repeat center;
       background-size: cover;
     }
-    
+
     .video-events {
       background: url("../../assets/img/bg-choco.jpg") no-repeat center;
       background-size: cover;
