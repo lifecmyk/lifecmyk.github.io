@@ -4,7 +4,7 @@ angular.module("app").controller("navController", function($scope, $timeout) {
   $scope.welcome = true;
 
   $timeout(() => {
-    $scope.welcome = true;
+    $scope.welcome = false;
   }, 4000);
 
   $scope.switchMenu = () => {
