@@ -209,6 +209,7 @@ angular.module("app").controller("homeController", function($scope, $timeout, $p
       direction: "horizontal",
       speed: 2000,
       slidesPerView: 1,
+      loop: true,
       spaceBetween: 0,
       effect: "fade",
       autoplay: {
