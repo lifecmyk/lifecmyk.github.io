@@ -2,10 +2,10 @@
   <section class="swiper-slide" id="paradis">
     <div class="overlay"></div>
     <div class="content col f-center">
-      <img src="./assets/img/slim.svg" alt="Ornament" class="ornament" />
-      <img src="./assets/img/logo.svg" alt="Paradís" class="logo" ng-click="slideTo()" />
+      <img ng-hide="textParadis" src="./assets/img/slim.svg" alt="Ornament" class="ornament" />
+      <img ng-hide="textParadis" src="./assets/img/logo.svg" alt="Paradís" class="logo" ng-click="slideTo()" />
       <h2>a guarantee of success for any event</h2>
-      <div ng-hide="mobile" class="row j-center">
+      <div ng-hide="mobile" ng-show="textParadis" class="row j-center">
         <p>
           The brand PARADIS begins its history in 1967, dedicated to the
           catering of big events, for more than 50 years. In Europe it has
@@ -27,7 +27,11 @@
           Mexico and China.
         </p>
       </div>
-      <img src="./assets/img/slim.svg" alt="Ornament" class="ornament" />
+      <img ng-hide="textParadis" src="./assets/img/slim.svg" alt="Ornament" class="ornament" />
+      <button ng-click="switchText('textParadis')" ng-if="mobile" ng-hide="textParadis" class="pri semi outline">MORE
+        INFO</button>
+      <button ng-click="switchText('textParadis')" ng-if="mobile" ng-show="textParadis" class="pri semi outline">LESS
+        INFO</button>
     </div>
   </section>
 
@@ -44,7 +48,7 @@
 
           <div class="card-content col j-end">
             <h2>Mr. Armando</h2>
-            <p ng-hide="mobile">
+            <p ng-hide="mobile" ng-show="textSince">
               Mr. Armando begins his training in architecture. Life takes him by
               accident to take the reins of what will be his first restaurant,
               recovering a manorial estate and turning it into the current Can
@@ -56,6 +60,10 @@
               "weekend bolo". At the same time, it starts up the Central
               Kitchen, starting in Spain and later in the rest of the world.
             </p>
+            <button ng-click="switchText('textSince')" ng-if="mobile" ng-hide="textSince" class="pri semi outline">MORE
+              INFO</button>
+            <button ng-click="switchText('textSince')" ng-if="mobile" ng-show="textSince" class="pri semi outline">LESS
+              INFO</button>
           </div>
         </div>
 
@@ -64,26 +72,48 @@
 
           <div class="card-content col j-end">
             <h2>Armando & Chengdu</h2>
-            <p ng-hide="mobile">
+            <p ng-hide="mobile" ng-show="textSince">
               Armando Bejar currently works as a consultant, adviser, mentor and
               is considered one of the leading experts in international
               catering.
             </p>
+            <button ng-click="switchText('textSince')" ng-if="mobile" ng-hide="textSince" class="pri semi outline">MORE
+              INFO</button>
+            <button ng-click="switchText('textSince')" ng-if="mobile" ng-show="textSince" class="pri semi outline">LESS
+              INFO</button>
           </div>
         </div>
 
         <div class="swiper-slide row card friends">
           <div class="bg">
             <div class="swiper-wrapper">
-              <img src="./assets/img/friends.jpg" alt="Friends" class="swiper-slide" />
-              <img src="./assets/img/friends1.jpg" alt="Friends" class="swiper-slide" />
-              <img src="./assets/img/friends2.jpg" alt="Friends" class="swiper-slide" />
-              <img src="./assets/img/friends3.jpg" alt="Friends" class="swiper-slide" />
-              <img src="./assets/img/friends4.jpg" alt="Friends" class="swiper-slide" />
+              <div class="swiper-slide">
+                <img src="./assets/img/friends.jpg" alt="Friends" class="swiper-slide" />
+                <div class="overlay"></div>
+                <h3>Tony Botella</h3>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/friends1.jpg" alt="Friends" class="swiper-slide" />
+                <div class="overlay"></div>
+                <h3>Ferran Adrià</h3>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/friends2.jpg" alt="Friends" class="swiper-slide" />
+                <div class="overlay"></div>
+                <h3>Pedro Subijana</h3>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/friends3.jpg" alt="Friends" class="swiper-slide" />
+                <div class="overlay"></div>
+                <h3>Ruben Trincado</h3>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/friends4.jpg" alt="Friends" class="swiper-slide" />
+                <div class="overlay"></div>
+                <h3>Victor Quintilla</h3>
+              </div>
             </div>
           </div>
-
-          <div class="overlay"></div>
 
           <div class="card-content col j-end">
             <h2>Armando & Friends</h2>
@@ -115,22 +145,22 @@
               <div class="swiper-slide">
                 <img src="./assets/img/high1.jpg" alt="Catering" />
                 <div class="overlay"></div>
-                <h3>We create choreography<br />but we are not a ballet</h3>
+                <h3 ng-hide="textCatering">We create choreography<br />but we are not a ballet</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/high2.jpg" alt="Catering" />
                 <div class="overlay"></div>
-                <h3>We create illusions<br />but we are not magicians</h3>
+                <h3 ng-hide="textCatering">We create illusions<br />but we are not magicians</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/high3.jpg" alt="Catering" />
                 <div class="overlay"></div>
-                <h3>We create style<br />but we are not poets</h3>
+                <h3 ng-hide="textCatering">We create style<br />but we are not poets</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/high4.jpg" alt="Catering" />
                 <div class="overlay"></div>
-                <h3>
+                <h3 ng-hide="textCatering">
                   We create sensations and we are<br />always ready for event
                   organization
                 </h3>
@@ -140,7 +170,7 @@
 
           <div class="card-content col j-end">
             <h2>High level catering</h2>
-            <p ng-hide="mobile">
+            <p ng-hide="mobile" ng-show="textCatering">
               Our high level catering division that operates under the Gourmet
               Paradís Catering brand has central kitchens in different parts of
               Spain, and logistics centers with a wide range of material for
@@ -149,6 +179,10 @@
               personalized style always respecting the needs of the client, the
               peculiarities of the environment and high levels of quality.
             </p>
+            <button ng-click="switchText('textCatering')" ng-if="mobile" ng-hide="textCatering"
+              class="pri semi outline">MORE INFO</button>
+            <button ng-click="switchText('textCatering')" ng-if="mobile" ng-show="textCatering"
+              class="pri semi outline">LESS INFO</button>
           </div>
         </div>
 
@@ -164,10 +198,14 @@
 
           <div class="card-content col j-end">
             <h2>Service</h2>
-            <p ng-hide="mobile">
+            <p ng-hide="mobile" ng-show="textCatering">
               A highly trained and cohesive human team allows us to move with
               agility and imagination.
             </p>
+            <button ng-click="switchText('textCatering')" ng-if="mobile" ng-hide="textCatering"
+              class="pri semi outline">MORE INFO</button>
+            <button ng-click="switchText('textCatering')" ng-if="mobile" ng-show="textCatering"
+              class="pri semi outline">LESS INFO</button>
           </div>
         </div>
 
@@ -324,11 +362,15 @@
 
           <div class="card-content col j-end">
             <h2>I+D</h2>
-            <p ng-hide="mobile">
+            <p ng-hide="mobile" ng-show="textGastrolab">
               Gastrolab is our laboratory I+D. Our expirience allows us to
               innovate and discover new forms of expressions, which we then take
               to all our services.
             </p>
+            <button ng-click="switchText('textGastrolab')" ng-if="mobile" ng-hide="textGastrolab"
+              class="pri semi outline">MORE INFO</button>
+            <button ng-click="switchText('textGastrolab')" ng-if="mobile" ng-show="textGastrolab"
+              class="pri semi outline">LESS INFO</button>
           </div>
         </div>
 
@@ -455,16 +497,20 @@
               Ecological products, <br />
               own gardens
             </h2>
-            <p ng-hide="mobile">
+            <p ng-hide="mobile" ng-show="textWeare">
               Each substance that contains the food ends up in our cells,
               improving our health and even our state of mind. Our agricultural
               production is totally ecological.
             </p>
-            <img src="./assets/img/eventsost.png" alt="Eventsost">
-            <p ng-hide="mobile">
+            <img ng-hide="mobile" ng-show="textWeare" src="./assets/img/eventsost.png" alt="Eventsost">
+            <p ng-hide="mobile" ng-show="textWeare">
               We are the first catering and events company that got the premium supplier certificate of Eventsost in
               europe.
             </p>
+            <button ng-click="switchText('textWeare')" ng-if="mobile" ng-hide="textWeare" class="pri semi outline">MORE
+              INFO</button>
+            <button ng-click="switchText('textWeare')" ng-if="mobile" ng-show="textWeare" class="pri semi outline">LESS
+              INFO</button>
           </div>
         </div>
 
@@ -486,15 +532,19 @@
           </div>
 
           <div class="card-content col j-end">
-            <h3>100% Ecologic & natural</h3>
+            <h3 ng-hide="textWeare">100% Ecologic & natural</h3>
             <h2>La Morana</h2>
-            <p ng-hide="mobile">
+            <p ng-hide="mobile" ng-show="textWeare">
               In La Morana we want to do our bit to this way of living
               respecting the cycles of the earth and nature, reaching people
               with plant and animal products in the best conditions of aging,
               conservation and flavor. This is our reason for being, and our
               humble way of giving back to nature all that it gives us.
             </p>
+            <button ng-click="switchText('textWeare')" ng-if="mobile" ng-hide="textWeare" class="pri semi outline">MORE
+              INFO</button>
+            <button ng-click="switchText('textWeare')" ng-if="mobile" ng-show="textWeare" class="pri semi outline">LESS
+              INFO</button>
           </div>
         </div>
       </div>
@@ -528,7 +578,7 @@
             <div><img src="./assets/img/page16.jpg" alt="Star Seal" /></div>
             <div><img src="./assets/img/page0.jpg" alt="Star Seal" /></div>
           </div>
-          
+
           <div class="row j-center buttons">
             <button ng-click="turnPrev()" class="pri outline semi">Prev</button>
             <button ng-click="turnNext()" class="pri outline semi">Next</button>
@@ -580,11 +630,15 @@
 
           <div class="card-content col j-end">
             <h2>Customers who<br />trust us</h2>
-            <p ng-hide="mobile">
+            <p ng-hide="mobile" ng-show="textSpaces">
               After so many years, we have had the opportunity to work for the
               most demanding clients, and meet their needs.
             </p>
-            <ul ng-hide="true">
+            <button ng-click="switchText('textSpaces')" ng-if="mobile" ng-hide="textSpaces"
+              class="pri semi outline">MORE INFO</button>
+            <button ng-click="switchText('textSpaces')" ng-if="mobile" ng-show="textSpaces"
+              class="pri semi outline">LESS INFO</button>
+            <ul ng-if="false">
               <li>Catering FC Catering 7 years</li>
               <li>Family Day SEAT 55.000 Pax</li>
               <li>Final Four Basket 2.500pax</li>

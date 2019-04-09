@@ -1,4 +1,4 @@
-angular.module("app").controller("homeController", function($scope, $timeout) {
+angular.module("app").controller("homeController", function($scope, $timeout, $parse) {
   info("Home loaded");
 
   const swiper = new Swiper(".swiper-container", {
@@ -87,6 +87,18 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     });
   }, 1000);
 
+  $scope.textParadis = false;
+  $scope.textSince = false;
+  $scope.textCatering = false;
+  $scope.textGastrolab = false;
+  $scope.textWeare = false;
+  $scope.textSpaces = false;
+
+  $scope.switchText = text => {
+    $parse(text);
+    $scope[text] = !$scope[text];
+  };
+
   if (window.innerWidth <= 1220) {
     $scope.mobile = true;
 
@@ -121,7 +133,6 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     const since = new Swiper(".since", {
       direction: "horizontal",
       speed: 800,
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
       effect: "fade",
@@ -134,7 +145,6 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     const catering = new Swiper(".catering", {
       direction: "horizontal",
       speed: 800,
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
       effect: "fade",
@@ -173,7 +183,6 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     const weare = new Swiper(".weare", {
       direction: "horizontal",
       speed: 800,
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
       effect: "fade",
@@ -186,7 +195,6 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     const spaces = new Swiper(".spaces", {
       direction: "horizontal",
       speed: 800,
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
       effect: "fade",
@@ -200,7 +208,6 @@ angular.module("app").controller("homeController", function($scope, $timeout) {
     const bg = new Swiper(".bg", {
       direction: "horizontal",
       speed: 2000,
-      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
       effect: "fade",

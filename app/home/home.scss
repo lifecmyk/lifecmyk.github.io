@@ -107,6 +107,18 @@
           object-fit: cover;
           object-position: center;
         }
+
+        h3 {
+          position: absolute;
+          top: 50%;
+          left: 80px;
+          transform: translateY(-50%);
+          font-size: 40px;
+          font-family: "Great Vibes";
+          line-height: 1;
+          color: #fff;
+          text-shadow: 0 2px 5px rgba(#000, 0.7);
+        }
       }
 
       .overlay {
@@ -200,7 +212,7 @@
           top: 45%;
           left: 80px;
           transform: translateY(-50%);
-          font-size: 50px;
+          font-size: 40px;
           font-family: "Great Vibes";
           line-height: 1;
           color: #fff;

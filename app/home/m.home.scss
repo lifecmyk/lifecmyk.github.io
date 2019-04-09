@@ -1,6 +1,10 @@
 @import "../../assets/scss/vars";
 
 .home-box {
+  button {
+    color: $pri !important;
+  }
+
   #paradis {
     .content {
       img {
@@ -9,6 +13,8 @@
 
       p {
         text-align: center;
+        font-size: 12px;
+        margin-bottom: 20px;
 
         &:first-of-type {
           margin-bottom: 20px;
@@ -24,13 +30,24 @@
 
     .card {
       .bg {
-        background: url("../../assets/img/bg-choco.jpg") no-repeat center;
-        background-size: cover;
+        .swiper-slide {
+          display: flex;
+          align-items: center;
+          background: url("../../assets/img/bg-choco.jpg") no-repeat center;
+          background-size: cover;
+          
+          img {
+            height: 40% !important;
+          }
 
-        img {
-          height: 40% !important;
-          margin: auto 0;
+          h3 {
+            top: inherit;
+            left: 40px;
+            bottom: 90px;
+            font-size: 40px;
+          }
         }
+
       }
 
       .card-content {
@@ -39,6 +56,7 @@
 
         p {
           font-size: 12px;
+          margin-bottom: 20px;
         }
       }
     }
@@ -52,7 +70,11 @@
     .card {
       .bg {
         h3 {
-          display: none;
+          top: inherit;
+          left: 40px;
+          bottom: 120px;
+          width: 70%;
+          font-size: 30px;
         }
       }
 
@@ -67,6 +89,7 @@
 
         p {
           font-size: 12px;
+          margin-bottom: 20px;
         }
       }
     }
@@ -98,6 +121,7 @@
 
         p {
           font-size: 12px;
+          margin-bottom: 20px;
         }
       }
     }
@@ -117,8 +141,14 @@
         width: 80%;
         padding: 40px;
 
-        img {
-          margin-bottom: 0;
+        h3 {
+          width: 90vw;
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 12px;
+          margin-bottom: 20px;
         }
       }
     }
@@ -163,7 +193,11 @@
 
     .card {
       .bg h3 {
-        display: none;
+        top: inherit;
+        bottom: 100px;
+        left: 40px;
+        width: 70%;
+        font-size: 24px;
       }
 
       .card-content {
@@ -172,6 +206,11 @@
 
         img {
           margin-bottom: 0;
+        }
+
+        p {
+          font-size: 12px;
+          margin-bottom: 20px;
         }
       }
     }
