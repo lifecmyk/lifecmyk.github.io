@@ -50,6 +50,10 @@
 
       }
 
+      .overlay {
+        width: 150% !important;
+      }
+
       .card-content {
         width: 80%;
         padding: 40px;
@@ -67,6 +71,10 @@
       padding: 20px 20px 0 20px;
     }
 
+    .opacity-zero {
+      opacity: 0 !important;
+    }
+
     .card {
       .bg {
         h3 {
@@ -81,6 +89,10 @@
       .list {
         bottom: 40px !important;
         left: 40px !important;
+      }
+
+      .overlay {
+        width: 150%;
       }
 
       .card-content {

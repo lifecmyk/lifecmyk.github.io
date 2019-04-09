@@ -89,27 +89,22 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="./assets/img/friends.jpg" alt="Friends" />
-                <div class="overlay"></div>
                 <h3>Tony Botella</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/friends1.jpg" alt="Friends" />
-                <div class="overlay"></div>
                 <h3>Ferran Adrià</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/friends2.jpg" alt="Friends" />
-                <div class="overlay"></div>
                 <h3>Pedro Subijana</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/friends3.jpg" alt="Friends" />
-                <div class="overlay"></div>
                 <h3>Ruben Trincado</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/friends4.jpg" alt="Friends" />
-                <div class="overlay"></div>
                 <h3>Victor Quintilla</h3>
               </div>
             </div>
@@ -141,26 +136,26 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide row card">
           <div class="bg">
-            <div class="swiper-wrapper">
+            <div ng-class="{'opacity-zero': textCatering === true}" class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="./assets/img/high1.jpg" alt="Catering" />
                 <div class="overlay"></div>
-                <h3 ng-hide="textCatering">We create choreography<br />but we are not a ballet</h3>
+                <h3>We create choreography<br />but we are not a ballet</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/high2.jpg" alt="Catering" />
                 <div class="overlay"></div>
-                <h3 ng-hide="textCatering">We create illusions<br />but we are not magicians</h3>
+                <h3>We create illusions<br />but we are not magicians</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/high3.jpg" alt="Catering" />
                 <div class="overlay"></div>
-                <h3 ng-hide="textCatering">We create style<br />but we are not poets</h3>
+                <h3>We create style<br />but we are not poets</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/high4.jpg" alt="Catering" />
                 <div class="overlay"></div>
-                <h3 ng-hide="textCatering">
+                <h3>
                   We create sensations and we are<br />always ready for event
                   organization
                 </h3>
@@ -415,18 +410,6 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./assets/img/lab5.jpg" alt="Gastrolab" />
-                <div class="overlay"></div>
-                <div class="col list">
-                  <h4>Vegan</h4>
-                  <h2>Meat & Fish</h2>
-                  <h4>Desserts</h4>
-                  <button ng-click="contact()" class="pri outline semi">
-                    For more information
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide">
                 <img src="./assets/img/lab1.jpg" alt="Gastrolab" />
                 <div class="overlay"></div>
                 <div class="col list">
@@ -451,6 +434,18 @@
                 </div>
               </div>
 
+              <div class="swiper-slide">
+                <img src="./assets/img/lab5.jpg" alt="Gastrolab" />
+                <div class="overlay"></div>
+                <div class="col list">
+                  <h4>Vegan</h4>
+                  <h4>Meat & Fish</h4>
+                  <h2>Desserts</h2>
+                  <button ng-click="contact()" class="pri outline semi">
+                    For more information
+                  </button>
+                </div>
+              </div>
               <div class="swiper-slide">
                 <img src="./assets/img/lab4.jpg" alt="Gastrolab" />
                 <div class="overlay"></div>

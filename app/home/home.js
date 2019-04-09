@@ -104,7 +104,7 @@ angular.module("app").controller("homeController", function($scope, $timeout, $p
 
     $timeout(() => {
       $("#flipbook").turn({
-        duration: 1200,
+        duration: 3000,
         autoCenter: true,
         display: "single"
       });
@@ -114,7 +114,7 @@ angular.module("app").controller("homeController", function($scope, $timeout, $p
 
     $timeout(() => {
       $("#flipbook").turn({
-        duration: 1200,
+        duration: 3000,
         autoCenter: true
       });
     }, 2000);
