@@ -7,7 +7,7 @@
 
       <h2 ng-if="lang === 'es'">una garantía de éxito para cualquier evento</h2>
       <h2 ng-if="lang === 'en'">a guarantee of success for any event</h2>
-      <h2 ng-if="lang === 'ch'">a guarantee of success for any event</h2>
+      <h2 ng-if="lang === 'ch'">任何活动的成功保证</h2>
 
       <div ng-if="lang === 'es'" ng-hide="mobile" ng-show="textParadis" class="row j-center">
         <p>
@@ -51,24 +51,12 @@
       </div>
       <div ng-if="lang === 'ch'" ng-hide="mobile" ng-show="textParadis" class="row j-center">
         <p>
-          The brand PARADIS begins its history in 1967, dedicated to the
-          catering of big events, for more than 50 years. In Europe it has
-          successfully carried out more than 90,000 events, collaborates with
-          more than 23 michelin stars, and throughout Europe it was the first
-          company to obtain the certificate of sustainable catering of
-          sosevents, awarded by the EU. It is the first company that applies the
-          trazacalidad concept to the circle of the kitchen garden with
-          excellence in Europe.
+          品牌帕蒂仕PARADIS®始于1967年，致力于大型外宴与整体宴会活动40余年，在欧洲累计超9万场宴会活动成功落地，携手逾23颗米其林主厨们进行长期合作，并且在整个欧洲是首家获得欧盟颁发的可持续宴会活动优质供应商证书的企业，亦是欧洲第一家极好的将生态田园直达餐桌生态圈与可溯源概念融会贯通的餐饮企业
         </p>
         <p>
-          To date it has more than 200 restoration projects, which include,
-          among other restaurants, hotel F & B projects, cafeterias, F & B
-          projects for fairs and central kitchens. Distinguished in the catering
-          sector in Spain, its geographic dispersion of catering activities
-          extends not only throughout the country, it is also punctually in
-          Portugal, France, Andorra, Switzerland, Germany, Holland, New York
-          (The first authentic food restaurant Spanish in 1990), Czech Republic,
-          Mexico and China.
+          至今拥有超200多个集餐厅、酒店餐饮项目、咖啡厅、会展中心餐饮项目以及中央厨房等项目。
+          作为西班牙餐饮界的佼佼者，其餐饮活动足迹广布，不仅遍及西班牙全国，还活跃于葡萄牙、法国、安道尔、瑞士、德国、荷兰、俄罗斯、纽约*、捷克共和国、墨西哥与中国。
+          * 纽约首家正统的西班牙餐厅（1990年）
         </p>
       </div>
 
@@ -94,11 +82,11 @@
 
       <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textParadis')" ng-hide="textParadis"
         class="pri semi outline">
-        MORE INFO
+        了解更多
       </button>
       <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textParadis')" ng-show="textParadis"
         class="pri semi outline">
-        LESS INFO
+        少了解
       </button>
     </div>
   </section>
@@ -107,7 +95,7 @@
     <div class="title col">
       <h1 ng-if="lang === 'es'">Desde 1967</h1>
       <h1 ng-if="lang === 'en'">Since 1967</h1>
-      <h1 ng-if="lang === 'ch'">Since 1967</h1>
+      <h1 ng-if="lang === 'ch'">自1967年以来</h1>
       <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
 
@@ -119,7 +107,7 @@
           <div class="card-content col j-end">
             <h2 ng-if="lang === 'es'">Sr. Armando</h2>
             <h2 ng-if="lang === 'en'">Mr. Armando</h2>
-            <h2 ng-if="lang === 'ch'">Mr. Armando</h2>
+            <h2 ng-if="lang === 'ch'">先生。 Armando</h2>
 
             <p ng-if="lang === 'es'" ng-hide="mobile" ng-show="textSince">
               El Sr. Armando comienza su formación en arquitectura. La vida lo lleva por accidente a tomar las riendas
@@ -143,16 +131,10 @@
               Kitchen, starting in Spain and later in the rest of the world.
             </p>
             <p ng-if="lang === 'ch'" ng-hide="mobile" ng-show="textSince">
-              Mr. Armando begins his training in architecture. Life takes him by
-              accident to take the reins of what will be his first restaurant,
-              recovering a manorial estate and turning it into the current Can
-              Amat complex. From that moment, he will always remain linked to
-              the world of restoration.
-              <br /><br />
-              Forerunner in his time in this sector, he develops a novel concept
-              in the creation of teams, totally opposed to the traditional
-              "weekend bolo". At the same time, it starts up the Central
-              Kitchen, starting in Spain and later in the rest of the world.
+              Armando先生起步于建筑学上塑造，深造在西班牙著有欧洲“哈佛”之称的IESE西班牙商学院，而生活的机缘巧合使他驾驭起他的第一家餐厅：修复一家威严的庄园并将它打造成现今的Can Amat整体，Can
+              Amat中有自助餐，餐厅和宴会大厅等特色场地。
+              由Armando先生所创办的品牌扎根于西班牙巴塞罗那，马德里。
+              他启动了最初在整个西班牙提供服务的中央厨房，服务渐次在其他城市铺展开来。
             </p>
 
             <button ng-if="mobile && lang === 'es'" ng-click="switchText('textSince')" ng-hide="textSince"
@@ -175,11 +157,11 @@
 
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textSince')" ng-hide="textSince"
               class="pri semi outline">
-              MORE INFO
+              了解更多
             </button>
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textSince')" ng-show="textSince"
               class="pri semi outline">
-              LESS INFO
+              少了解
             </button>
           </div>
         </div>
@@ -190,7 +172,7 @@
           <div class="card-content col j-end">
             <h2 ng-if="lang === 'es'">Armando y Chengdu</h2>
             <h2 ng-if="lang === 'en'">Armando & Chengdu</h2>
-            <h2 ng-if="lang === 'ch'">Armando & Chengdu</h2>
+            <h2 ng-if="lang === 'ch'">Armando 和成都</h2>
 
             <p ng-if="lang === 'es'" ng-hide=" mobile" ng-show="textSince">
               Armando Bejar actualmente trabaja como consultor, asesor, mentor y es considerado uno de los principales
@@ -202,9 +184,7 @@
               catering.
             </p>
             <p ng-if="lang === 'ch'" ng-hide=" mobile" ng-show="textSince">
-              Armando Bejar currently works as a consultant, advisor, mentor and
-              is considered one of the leading experts in international
-              catering.
+              Armando Bejar目前担任顾问，顾问，导师，被认为是国际餐饮领域的领先专家之一
             </p>
 
             <button ng-if="mobile && lang === 'es'" ng-click="switchText('textSince')" ng-hide="textSince"
@@ -227,11 +207,11 @@
 
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textSince')" ng-hide="textSince"
               class="pri semi outline">
-              MORE INFO
+              了解更多
             </button>
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textSince')" ng-show="textSince"
               class="pri semi outline">
-              LESS INFO
+              少了解
             </button>
           </div>
         </div>
@@ -272,10 +252,9 @@
           <div class="card-content col j-end">
             <h2 ng-if="lang === 'es'">Armando y Amigos</h2>
             <h2 ng-if="lang === 'en'">Armando & Friends</h2>
-            <h2 ng-if="lang === 'ch'">Armando & Friends</h2>
+            <h2 ng-if="lang === 'ch'">Armando 和朋友</h2>
 
             <p ng-if="lang === 'es'" ng-hide="mobile">
-
               Durante más de 50 años en el sector hotelero, nos hemos reunido con muchas celebridades del sector, tanto
               en restauración como en otros sectores relacionados con la restauración y eventos.
             </p>
@@ -285,9 +264,7 @@
               related to catering and events.
             </p>
             <p ng-if="lang === 'ch'" ng-hide="mobile">
-              More than 50 years in the hotel trade, we have made us meet with
-              many celebrities in the sector, both catering and other sectors
-              related to catering and events.
+              在酒店贸易领域超过50年，我们已经让我们与该领域的许多名人见面，包括餐饮和其他与餐饮和活动相关的领域。
             </p>
           </div>
         </div>
@@ -302,7 +279,7 @@
     <div class="title col">
       <h1 ng-if="lang === 'es'">Catering y Eventos</h1>
       <h1 ng-if="lang === 'en'">Catering & Events</h1>
-      <h1 ng-if="lang === 'ch'">Catering & Events</h1>
+      <h1 ng-if="lang === 'ch'">餐饮与活动</h1>
       <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
 
@@ -316,21 +293,21 @@
                 <div class="overlay"></div>
                 <h3 ng-if="lang === 'es'">Creamos coreografias<br />y no somos un ballet</h3>
                 <h3 ng-if="lang === 'en'">We create choreography<br />but we are not a ballet</h3>
-                <h3 ng-if="lang === 'ch'">We create choreography<br />but we are not a ballet</h3>
+                <h3 ng-if="lang === 'ch'">我们不是芭蕾舞者，却能舞动舌尖。</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/high2.jpg" alt="Catering" />
                 <div class="overlay"></div>
                 <h3 ng-if="lang === 'es'">Creamos ilusiones<br />y no somos magos</h3>
                 <h3 ng-if="lang === 'en'">We create illusions<br />but we are not magicians</h3>
-                <h3 ng-if="lang === 'ch'">We create illusions<br />but we are not magicians</h3>
+                <h3 ng-if="lang === 'ch'">我们不是魔法师，却能变幻美食仙境。</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/high3.jpg" alt="Catering" />
                 <div class="overlay"></div>
                 <h3 ng-if="lang === 'es'">Creamos estilo<br />y no somos poetas</h3>
                 <h3 ng-if="lang === 'en'">We create style<br />but we are not poets</h3>
-                <h3 ng-if="lang === 'ch'">We create style<br />but we are not poets</h3>
+                <h3 ng-if="lang === 'ch'">我们不是诗人，却能谱写食物的华章。</h3>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/img/high4.jpg" alt="Catering" />
@@ -343,8 +320,7 @@
                   organization
                 </h3>
                 <h3 ng-if="lang === 'ch'">
-                  We create sensations and we are<br />always ready for event
-                  organization
+                  我们创造意境并携您共赴味蕾之旅。
                 </h3>
               </div>
             </div>
@@ -353,10 +329,9 @@
           <div class="card-content col j-end">
             <h2 ng-if="lang === 'es'">Catering de alto nivel</h2>
             <h2 ng-if="lang === 'en'">High level catering</h2>
-            <h2 ng-if="lang === 'ch'">High level catering</h2>
+            <h2 ng-if="lang === 'ch'">高水平的餐饮</h2>
 
             <p ng-if="lang === 'es'" ng-hide="mobile" ng-show="textCatering">
-
               Nuestra división de catering de alto nivel que opera bajo la marca Gourmet Paradís Catering cuenta con
               cocinas centrales en diferentes partes de España y centros logísticos con una amplia gama de material para
               catering, eventos y decoración efímera. La premisa, sin embargo, es proporcionar todos los eventos que
@@ -373,13 +348,7 @@
               peculiarities of the environment and high levels of quality.
             </p>
             <p ng-if="lang === 'ch'" ng-hide="mobile" ng-show="textCatering">
-              Our high level catering division that operates under the Gourmet
-              Paradís Catering brand has central kitchens in different parts of
-              Spain, and logistics centers with a wide range of material for
-              catering, events and ephemeral decoration. The premise is,
-              however, to provide all events that organize a unique and
-              personalized style always respecting the needs of the client, the
-              peculiarities of the environment and high levels of quality.
+              帕蒂仕品牌的高规格宴会服务具备独立的地中海烹饪中央厨房和配送中心，优渥的物料、高品质食材的出品、多元素的快速布景、人性化且个性化团队服务意识是任何宴会与活动的成功保证。
             </p>
 
             <button ng-if="mobile && lang === 'es'" ng-click="switchText('textCatering')" ng-hide="textCatering"
@@ -402,11 +371,11 @@
 
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textCatering')" ng-hide="textCatering"
               class="pri semi outline">
-              MORE INFO
+              了解更多
             </button>
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textCatering')" ng-show="textCatering"
               class="pri semi outline">
-              LESS INFO
+              少了解
             </button>
           </div>
         </div>
@@ -434,8 +403,7 @@
               agility and imagination.
             </p>
             <p ng-if="lang === 'ch'" ng-hide="mobile" ng-show="textCatering">
-              A highly trained and cohesive human team allows us to move with
-              agility and imagination.
+              一支人性化且训练有素的团队，使我们的行动生动灵活且富有想象。
             </p>
 
             <button ng-if="mobile && lang === 'es'" ng-click="switchText('textCatering')" ng-hide="textCatering"
@@ -458,11 +426,11 @@
 
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textCatering')" ng-hide="textCatering"
               class="pri semi outline">
-              MORE INFO
+              了解更多
             </button>
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textCatering')" ng-show="textCatering"
               class="pri semi outline">
-              LESS INFO
+              少了解
             </button>
           </div>
         </div>
@@ -631,9 +599,7 @@
               to all our services.
             </p>
             <p ng-if="lang === 'ch'" ng-hide="mobile" ng-show="textGastrolab">
-              Gastrolab is our laboratory I+D. Our experience allows us to
-              innovate and discover new forms of expressions, which we then take
-              to all our services.
+              Gastrolab 是我们的美食研发部，我们的深厚经验让我们不断创新迭代更优的食材解读形式，我们也将这样的研发成果源源不断的引入我们活动服务中。
             </p>
 
             <button ng-if="mobile && lang === 'es'" ng-click="switchText('textGastrolab')" ng-hide="textGastrolab"
@@ -656,11 +622,11 @@
 
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textGastrolab')" ng-hide="textGastrolab"
               class="pri semi outline">
-              MORE INFO
+              了解更多
             </button>
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textGastrolab')" ng-show="textGastrolab"
               class="pri semi outline">
-              LESS INFO
+              少了解
             </button>
           </div>
         </div>
@@ -683,7 +649,7 @@
                     For more information
                   </button>
                   <button ng-if="lang === 'ch'" ng-click="contact()" class="pri outline semi">
-                    For more information
+                    了解更多
                   </button>
                 </div>
               </div>
@@ -702,7 +668,7 @@
                     For more information
                   </button>
                   <button ng-if="lang === 'ch'" ng-click="contact()" class="pri outline semi">
-                    For more information
+                    了解更多
                   </button>
                 </div>
               </div>
@@ -722,7 +688,7 @@
                     For more information
                   </button>
                   <button ng-if="lang === 'ch'" ng-click="contact()" class="pri outline semi">
-                    For more information
+                    了解更多
                   </button>
                 </div>
               </div>
@@ -741,7 +707,7 @@
                     For more information
                   </button>
                   <button ng-if="lang === 'ch'" ng-click="contact()" class="pri outline semi">
-                    For more information
+                    了解更多
                   </button>
                 </div>
               </div>
@@ -760,7 +726,7 @@
                     For more information
                   </button>
                   <button ng-if="lang === 'ch'" ng-click="contact()" class="pri outline semi">
-                    For more information
+                    了解更多
                   </button>
                 </div>
               </div>
@@ -780,7 +746,7 @@
                     For more information
                   </button>
                   <button ng-if="lang === 'ch'" ng-click="contact()" class="pri outline semi">
-                    For more information
+                    了解更多
                   </button>
                 </div>
               </div>
@@ -799,7 +765,7 @@
                     For more information
                   </button>
                   <button ng-if="lang === 'ch'" ng-click="contact()" class="pri outline semi">
-                    For more information
+                    了解更多
                   </button>
                 </div>
               </div>
@@ -817,7 +783,7 @@
     <div class="title col">
       <h1 ng-if="lang === 'es'">Somos lo que comemos</h1>
       <h1 ng-if="lang === 'en'">We are what we eat</h1>
-      <h1 ng-if="lang === 'ch'">We are what we eat</h1>
+      <h1 ng-if="lang === 'ch'">吾食为吾</h1>
 
       <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
@@ -845,8 +811,8 @@
               own gardens
             </h2>
             <h2 ng-if="lang === 'ch'">
-              Ecological products, <br />
-              own gardens
+              生态食材，<br />
+              从农场直达餐桌。
             </h2>
 
             <p ng-if="lang === 'es'" ng-hide="mobile" ng-show="textWeare">
@@ -859,9 +825,7 @@
               production is totally ecological.
             </p>
             <p ng-if="lang === 'ch'" ng-hide="mobile" ng-show="textWeare">
-              Each substance that contains the food ends up in our cells,
-              improving our health and even our state of mind. Our agricultural
-              production is totally ecological.
+              食物所含的营养成分最终会为我们的细胞所吸收，不单单益于我们的身体健康甚至于是我们的头脑伶俐也是如此，我们的农业生产是完全原生态的。
             </p>
 
             <img ng-hide="mobile" ng-show="textWeare" src="./assets/img/eventsost.png" alt="Eventsost">
@@ -875,8 +839,7 @@
               europe.
             </p>
             <p ng-if="lang === 'ch'" ng-hide="mobile" ng-show="textWeare">
-              We are the first catering and events company that got the premium supplier certificate of Eventsost in
-              europe.
+              我们是整个欧洲首家获得可持续外宴与整体宴会活动优质供应商的企业。
             </p>
 
             <button ng-if="mobile && lang === 'es'" ng-click="switchText('textWeare')" ng-hide="textWeare"
@@ -899,11 +862,11 @@
 
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textWeare')" ng-hide="textWeare"
               class="pri semi outline">
-              MORE INFO
+              了解更多
             </button>
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textWeare')" ng-show="textWeare"
               class="pri semi outline">
-              LESS INFO
+              少了解
             </button>
           </div>
         </div>
@@ -928,7 +891,7 @@
           <div class="card-content col j-end">
             <h3 ng-if="lang === 'es'" ng-hide="textWeare">100% Ecológico y natural</h3>
             <h3 ng-if="lang === 'en'" ng-hide="textWeare">100% Ecologic & natural</h3>
-            <h3 ng-if="lang === 'ch'" ng-hide="textWeare">100% Ecologic & natural</h3>
+            <h3 ng-if="lang === 'ch'" ng-hide="textWeare">100％生态和自然</h3>
 
             <h2>La Morana</h2>
 
@@ -946,11 +909,8 @@
               humble way of giving back to nature all that it gives us.
             </p>
             <p ng-if="lang === 'ch'" ng-hide="mobile" ng-show="textWeare">
-              In La Morana we want to do our bit to this way of living
-              respecting the cycles of the earth and nature, reaching people
-              with plant and animal products in the best conditions of aging,
-              conservation and flavor. This is our reason for being, and our
-              humble way of giving back to nature all that it gives us.
+              在La Morana 蔬果园，我们想以这样的生活方式来致敬地球与大自然的生态圈：将蔬果与肉品以最好的熟成状态、最新鲜的保存方式及最棒的味觉口感送达人们的餐桌。
+              这就是我们存在的理由，以及我们以这样一种谦恭的方式回馈大自然。
             </p>
 
             <button ng-if="mobile && lang === 'es'" ng-click="switchText('textWeare')" ng-hide="textWeare"
@@ -973,11 +933,11 @@
 
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textWeare')" ng-hide="textWeare"
               class="pri semi outline">
-              MORE INFO
+              了解更多
             </button>
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textWeare')" ng-show="textWeare"
               class="pri semi outline">
-              LESS INFO
+              少了解
             </button>
           </div>
         </div>
@@ -993,24 +953,73 @@
       <div class="card row j-center">
         <div class="col j-center book">
           <div id="flipbook">
-            <div><img src="./assets/img/page0.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page5.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page1.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page2.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page3.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page4.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page6.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page7.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page8.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page9.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page10.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page11.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page12.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page13.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page14.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page15.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page16.jpg" alt="Star Seal" /></div>
-            <div><img src="./assets/img/page17.jpg" alt="Star Seal" /></div>
+            <div>
+              <img src="./assets/img/page0.jpg" alt="Star Seal" />
+            </div>
+            <div>
+              <img src="./assets/img/page5.jpg" alt="Star Seal" />
+              <p>Shakira - Colombian singer</p>
+            </div>
+            <div>
+              <img src="./assets/img/page1.jpg" alt="Star Seal" />
+              <p>Donna Summer - American singer</p>
+            </div>
+            <div>
+              <img src="./assets/img/page2.jpg" alt="Star Seal" />
+            </div>
+            <div>
+              <img src="./assets/img/page3.jpg" alt="Star Seal" />
+              <p>Santiago Segura - Spanish actor</p>
+            </div>
+            <div>
+              <img src="./assets/img/page4.jpg" alt="Star Seal" />
+              <p>Pedro Almodovar - Spanish film director</p>
+            </div>
+            <div>
+              <img src="./assets/img/page6.jpg" alt="Star Seal" />
+              <p>Paulo Coelho - Brazilian lyricist & novelist</p>
+            </div>
+            <div>
+              <img src="./assets/img/page7.jpg" alt="Star Seal" />
+              <p>Red Hot Chili Peppers = US rock band</p>
+            </div>
+            <div>
+              <img src="./assets/img/page8.jpg" alt="Star Seal" />
+              <p>Scorpions - German rock band</p>
+            </div>
+            <div>
+              <img src="./assets/img/page9.jpg" alt="Star Seal" />
+            </div>
+            <div>
+              <img src="./assets/img/page10.jpg" alt="Star Seal" />
+              <p>Tony Botella - Spanish self-taught chef</p>
+            </div>
+            <div>
+              <img src="./assets/img/page11.jpg" alt="Star Seal" />
+              <p>Luz Casal - Spanish singer</p>
+            </div>
+            <div>
+              <img src="./assets/img/page12.jpg" alt="Star Seal" />
+              <p>Umberto Tozzi - Italian singer</p>
+            </div>
+            <div>
+              <img src="./assets/img/page13.jpg" alt="Star Seal" />
+              <p>Chenoa - Argentine/Spanish musician</p>
+            </div>
+            <div>
+              <img src="./assets/img/page14.jpg" alt="Star Seal" />
+              <p>Nek - Italian musician</p>
+            </div>
+            <div>
+              <img src="./assets/img/page15.jpg" alt="Star Seal" />
+              <p>Chayanne - Puerto Rican singer & actor</p>
+            </div>
+            <div>
+              <img src="./assets/img/page16.jpg" alt="Star Seal" />
+            </div>
+            <div>
+              <img src="./assets/img/page17.jpg" alt="Star Seal" />
+            </div>
           </div>
 
           <div ng-if="lang === 'es'" class="row j-center buttons">
@@ -1024,8 +1033,8 @@
           </div>
 
           <div ng-if="lang === 'ch'" class="row j-center buttons">
-            <button ng-click="turnPrev()" class="pri outline semi">Prev</button>
-            <button ng-click="turnNext()" class="pri outline semi">Next</button>
+            <button ng-click="turnPrev()" class="pri outline semi">以前</button>
+            <button ng-click="turnNext()" class="pri outline semi">下一个</button>
           </div>
         </div>
       </div>
@@ -1034,7 +1043,9 @@
 
   <section class="swiper-slide" id="videos">
     <div class="title col">
-      <h1>Videos</h1>
+      <h1 ng-if="lang === 'es'">Videos</h1>
+      <h1 ng-if="lang === 'en'">Videos</h1>
+      <h1 ng-if="lang === 'ch'">视频</h1>
       <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
 
@@ -1065,7 +1076,7 @@
     <div class="title col">
       <h1 ng-if="lang === 'es'">Espacios y Colaboraciones</h1>
       <h1 ng-if="lang === 'en'">Spaces & Colaborations</h1>
-      <h1 ng-if="lang === 'ch'">Spaces & Colaborations</h1>
+      <h1 ng-if="lang === 'ch'">场地与合作</h1>
 
       <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
@@ -1078,7 +1089,7 @@
           <div class="card-content col j-end">
             <h2 ng-if="lang === 'es'">Clientes que<br />confian en nosotros</h2>
             <h2 ng-if="lang === 'en'">Customers who<br />trust us</h2>
-            <h2 ng-if="lang === 'ch'">Customers who<br />trust us</h2>
+            <h2 ng-if="lang === 'ch'">信任着我们的客户</h2>
 
             <p ng-if="lang === 'es'" ng-hide="mobile" ng-show="textSpaces">
               Después de tantos años, hemos tenido la oportunidad de trabajar para los clientes más exigentes y
@@ -1089,8 +1100,7 @@
               most demanding clients, and meet their needs.
             </p>
             <p ng-if="lang === 'ch'" ng-hide="mobile" ng-show="textSpaces">
-              After so many years, we have had the opportunity to work for the
-              most demanding clients, and meet their needs.
+              这么多年来，我们拥有为最高要求的客户工作的机缘, 并且, 始终切合着客户的需求。
             </p>
 
             <button ng-if="mobile && lang === 'es'" ng-click="switchText('textSpaces')" ng-hide="textSpaces"
@@ -1113,11 +1123,11 @@
 
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textSpaces')" ng-hide="textSpaces"
               class="pri semi outline">
-              MORE INFO
+              了解更多
             </button>
             <button ng-if="mobile && lang === 'ch'" ng-click="switchText('textSpaces')" ng-show="textSpaces"
               class="pri semi outline">
-              LESS INFO
+              少了解
             </button>
 
             <ul ng-if="false">
@@ -1211,12 +1221,9 @@
             </p>
           </div>
           <div ng-if="lang === 'ch'" class="card-content col j-end">
-            <h2>The perfect place</h2>
+            <h2>完美的场地</h2>
             <p ng-hide="mobile">
-              With presence in all cities of Spain, we are already a national
-              leader in the organization of events, with average more than 5000
-              events a year，offering different types of services for 250,000
-              clients per month, and currently manage more than 300 spaces.
+              凭借在西班牙所有城市的业务，我们已成为活动组织的全国领导者，平均每年举办超过5000场活动，每月为250,000名客户提供不同类型的服务，目前管理着300多个场所。
             </p>
           </div>
         </div>
@@ -1231,7 +1238,7 @@
     <div class="title col">
       <h1 ng-if="lang === 'es'">Contacta</h1>
       <h1 ng-if="lang === 'en'">Contact Us</h1>
-      <h1 ng-if="lang === 'ch'">Contact Us</h1>
+      <h1 ng-if="lang === 'ch'">联系我们</h1>
 
       <img class="ornament" src="./assets/img/title.svg" alt="Ornament" />
     </div>
@@ -1242,22 +1249,40 @@
           <div class="overlay"></div>
 
           <div class="card-content col j-end contact-bg">
-            <h2>España</h2>
-            <p>
-              BARCELONA
-            </p>
+            <h2 ng-if="lang === 'es'">España</h2>
+            <h2 ng-if="lang === 'en'">Spain</h2>
+            <h2 ng-if="lang === 'ch'">西班牙</h2>
+
+            <p ng-if="lang === 'es'">BARCELONA</p>
+            <p ng-if="lang === 'en'">BARCELONA</p>
+            <p ng-if="lang === 'ch'">巴塞罗那</p>
+
             <a href="mailto:info@newparadis.com">info@newparadis.com</a>
             <a href="tel:0034937714027">+34 93 771 4027</a>
             <br />
-            <p>
-              MADRID
-            </p>
+
+            <p ng-if="lang === 'es'">MADRID</p>
+            <p ng-if="lang === 'en'">MADRID</p>
+            <p ng-if="lang === 'ch'">马德里</p>
+
             <a href="mailto:comercialmad@newparadis.com">comercialmad@newparadis.com</a>
             <a href="tel:0034914297303">+34 91 429 7303</a>
           </div>
           <div class="card-content col j-end">
-            <h2>Chengdu</h2>
-            <p>
+            <h2 ng-if="lang === 'es'">Chengdu</h2>
+            <h2 ng-if="lang === 'en'">Chengdu</h2>
+            <h2 ng-if="lang === 'ch'">中国·成都</h2>
+
+            <p ng-if="lang === 'es'">
+              Oficina 2803
+              <br />
+              Yintai Center Tower 3
+              <br />
+              Tianfu Avenida No.1199
+              <br />
+              Chengdu, China
+            </p>
+            <p ng-if="lang === 'en'">
               Office 2803
               <br />
               Yintai Center Tower 3
@@ -1266,9 +1291,19 @@
               <br />
               Chengdu, China
             </p>
+            <p ng-if="lang === 'ch'">
+              办公室2803
+              <br />
+              银泰中心大厦3
+              <br />
+              天府大道1199号
+              <br />
+              成都，中国
+            </p>
+
             <br />
-            <a href="mailto:cha@newparadis.com">cha@newparadis.com</a>
-            <a href="tel:008613395457018">+86 133 9545 7018</a>
+            <a href="mailto:catering_dir@paradischengdu.com">catering_dir@paradischengdu.com</a>
+            <a href="tel:008617702877690">+86 17702877690</a>
           </div>
         </div>
       </div>

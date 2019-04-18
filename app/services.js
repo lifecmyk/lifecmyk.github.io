@@ -5,13 +5,13 @@ app.factory("local", $state => {
   if (userLang === "es" || userLang === "es-ES" || userLang === "ES" || userLang === "es_ES") {
     local.lang = "es";
   }
-  if (userLang === "ch" || userLang === "ch-CH" || userLang === "CH" || userLang === "ch_CH") {
-    local.lang = "ch";
-  }
   if (userLang === "en" || userLang === "en-EN" || userLang === "EN" || userLang === "en_EN") {
     local.lang = "en";
   }
-
+  if (userLang === "zh" || userLang === "zh-ZH" || userLang === "ZH" || userLang === "zh_ZH") {
+    local.lang = "ch";
+  }
+  
   info("Web is in (" + local.lang.toUpperCase() + ")");
 
   local.change = () => {

@@ -16,7 +16,7 @@ angular.module("app").controller("homeController", function($scope, $timeout, lo
 
   $timeout(() => {
     const mainSwiper = document.querySelector(".swiper-container").swiper;
-    $scope.contact = () => mainSwiper.slideTo(7);
+    $scope.contact = () => mainSwiper.slideTo(8);
 
     mainSwiper.on("slideChange", () => {
       let actual = mainSwiper.activeIndex;
