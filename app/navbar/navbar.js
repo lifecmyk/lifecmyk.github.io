@@ -1,7 +1,10 @@
-angular.module("app").controller("navController", function($scope, $timeout) {
+angular.module("app").controller("navController", function($scope, $timeout, local) {
   info("Nav loaded");
-
-  $scope.welcome = true;
+  
+  $scope.lang = local.lang;
+  $scope.changeLang = local.change;
+  
+  $scope.welcome = false;
 
   $timeout(() => {
     $scope.welcome = false;
@@ -36,7 +39,7 @@ angular.module("app").controller("navController", function($scope, $timeout) {
   $timeout(() => {
     const mainSwiper = document.querySelector(".swiper-container").swiper;
     $scope.scrollTo = i => {
-      mainSwiper.slideTo(i)
+      mainSwiper.slideTo(i);
       _(".mob-menu").tog("active");
     };
 

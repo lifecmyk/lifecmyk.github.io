@@ -1,5 +1,7 @@
-angular.module("app").controller("homeController", function($scope, $timeout, $parse) {
+angular.module("app").controller("homeController", function($scope, $timeout, local, $parse) {
   info("Home loaded");
+
+  $scope.lang = local.lang;
 
   const swiper = new Swiper(".swiper-container", {
     direction: "vertical",

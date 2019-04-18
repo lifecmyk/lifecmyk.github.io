@@ -3,36 +3,77 @@
 <img ng-click="scrollTo(0)" src="../../assets/img/logo-menu.svg" alt="Paradis Chengdu" class="logo" />
 
 <ul class="menu row j-end a-center">
-  <li ng-click="scrollTo(1)">Since 1967</li>
-  <li ng-click="scrollTo(2)">Catering & Events</li>
-  <li ng-click="scrollTo(3)">Gastrolab</li>
-  <li ng-click="scrollTo(4)">We are what we eat</li>
-  <li ng-click="scrollTo(5)">Star seal</li>
-  <li ng-click="scrollTo(6)">Videos</li>
-  <li ng-click="scrollTo(7)">Spaces & Colaborations</li>
-  <li ng-click="scrollTo(8)">Contact us</li>
-  <li class="lang flex f-center"><img src="../../assets/img/en.svg" alt="english" />EN</li>
+  <li ng-if="lang === 'es'" ng-click="scrollTo(1)">Desde 1967</li>
+  <li ng-if="lang === 'es'" ng-click="scrollTo(2)">Catering y Eventos</li>
+  <li ng-if="lang === 'es'" ng-click="scrollTo(3)">Gastrolab</li>
+  <li ng-if="lang === 'es'" ng-click="scrollTo(4)">Somos lo que comemos</li>
+  <li ng-if="lang === 'es'" ng-click="scrollTo(5)">Sello Estrella</li>
+  <li ng-if="lang === 'es'" ng-click="scrollTo(6)">Videos</li>
+  <li ng-if="lang === 'es'" ng-click="scrollTo(7)">Espacios y Colaboraciones</li>
+  <li ng-if="lang === 'es'" ng-click="scrollTo(8)">Contacta</li>
+
+  <li ng-if="lang === 'en'" ng-click="scrollTo(1)">Since 1967</li>
+  <li ng-if="lang === 'en'" ng-click="scrollTo(2)">Catering & Events</li>
+  <li ng-if="lang === 'en'" ng-click="scrollTo(3)">Gastrolab</li>
+  <li ng-if="lang === 'en'" ng-click="scrollTo(4)">We are what we eat</li>
+  <li ng-if="lang === 'en'" ng-click="scrollTo(5)">Star Seal</li>
+  <li ng-if="lang === 'en'" ng-click="scrollTo(6)">Videos</li>
+  <li ng-if="lang === 'en'" ng-click="scrollTo(7)">Spaces & Colaborations</li>
+  <li ng-if="lang === 'en'" ng-click="scrollTo(8)">Contact us</li>
+
+  <li ng-if="lang === 'ch'" ng-click="scrollTo(1)">Since 1967</li>
+  <li ng-if="lang === 'ch'" ng-click="scrollTo(2)">Catering & Events</li>
+  <li ng-if="lang === 'ch'" ng-click="scrollTo(3)">Gastrolab</li>
+  <li ng-if="lang === 'ch'" ng-click="scrollTo(4)">We are what we eat</li>
+  <li ng-if="lang === 'ch'" ng-click="scrollTo(5)">Star Seal</li>
+  <li ng-if="lang === 'ch'" ng-click="scrollTo(6)">Videos</li>
+  <li ng-if="lang === 'ch'" ng-click="scrollTo(7)">Spaces & Colaborations</li>
+  <li ng-if="lang === 'ch'" ng-click="scrollTo(8)">Contact us</li>
+
+  <li ng-click="changeLang()" class="lang flex f-center">
+    <img ng-src="../../assets/img/{{ lang }}.svg" alt="{{ lang }}" />
+    {{ lang.toUpperCase() }}
+  </li>
 </ul>
 
 <div class="burger" ng-click="switchMenu()"><i class="fas fa-ellipsis-v"></i></div>
 
 <div ng-if="mobile" class="mob-menu col f-center">
   <ul class="col a-center">
-    <li ng-click="scrollTo(1)">Since 1967</li>
-    <li ng-click="scrollTo(2)">Catering & Events</li>
-    <li ng-click="scrollTo(3)">Gastrolab</li>
-    <li ng-click="scrollTo(4)">We are what we eat</li>
-    <li ng-click="scrollTo(5)">Star seal</li>
-    <li ng-click="scrollTo(6)">Videos</li>
-    <li ng-click="scrollTo(7)">Spaces & Colaborations</li>
-    <li ng-click="scrollTo(8)">Contact us</li>
+    <li ng-if="lang === 'es'" ng-click="scrollTo(1)">Desde 1967</li>
+    <li ng-if="lang === 'es'" ng-click="scrollTo(2)">Catering y Eventos</li>
+    <li ng-if="lang === 'es'" ng-click="scrollTo(3)">Gastrolab</li>
+    <li ng-if="lang === 'es'" ng-click="scrollTo(4)">Somos lo que comemos</li>
+    <li ng-if="lang === 'es'" ng-click="scrollTo(5)">Sello Estrella</li>
+    <li ng-if="lang === 'es'" ng-click="scrollTo(6)">Videos</li>
+    <li ng-if="lang === 'es'" ng-click="scrollTo(7)">Espacios y Colaboraciones</li>
+    <li ng-if="lang === 'es'" ng-click="scrollTo(8)">Contacta</li>
+
+    <li ng-if="lang === 'en'" ng-click="scrollTo(1)">Since 1967</li>
+    <li ng-if="lang === 'en'" ng-click="scrollTo(2)">Catering & Events</li>
+    <li ng-if="lang === 'en'" ng-click="scrollTo(3)">Gastrolab</li>
+    <li ng-if="lang === 'en'" ng-click="scrollTo(4)">We are what we eat</li>
+    <li ng-if="lang === 'en'" ng-click="scrollTo(5)">Star Seal</li>
+    <li ng-if="lang === 'en'" ng-click="scrollTo(6)">Videos</li>
+    <li ng-if="lang === 'en'" ng-click="scrollTo(7)">Spaces & Colaborations</li>
+    <li ng-if="lang === 'en'" ng-click="scrollTo(8)">Contact us</li>
+
+    <li ng-if="lang === 'ch'" ng-click="scrollTo(1)">Since 1967</li>
+    <li ng-if="lang === 'ch'" ng-click="scrollTo(2)">Catering & Events</li>
+    <li ng-if="lang === 'ch'" ng-click="scrollTo(3)">Gastrolab</li>
+    <li ng-if="lang === 'ch'" ng-click="scrollTo(4)">We are what we eat</li>
+    <li ng-if="lang === 'ch'" ng-click="scrollTo(5)">Star Seal</li>
+    <li ng-if="lang === 'ch'" ng-click="scrollTo(6)">Videos</li>
+    <li ng-if="lang === 'ch'" ng-click="scrollTo(7)">Spaces & Colaborations</li>
+    <li ng-if="lang === 'ch'" ng-click="scrollTo(8)">Contact us</li>
   </ul>
 
   <div class="col submenu">
     <div class="col a-center contact">
-      <p>
-        Office 2803, Yintai Center Tower 3, Tianfu Avenue No.1199, Chengdu, China
-      </p>
+      <p ng-if="lang === 'es'">Oficina 2803, Yintai Center Tower 3, Tianfu Avenida No.1199, Chengdu, China</p>
+      <p ng-if="lang === 'en'">Office 2803, Yintai Center Tower 3, Tianfu Avenue No.1199, Chengdu, China</p>
+      <p ng-if="lang === 'ch'">Office 2803, Yintai Center Tower 3, Tianfu Avenue No.1199, Chengdu, China</p>
+
       <a href="mailto:cha@newparadis.com">cha@newparadis.com</a>
       <a href="tel:008613395457018">+86 133 9545 7018</a>
     </div>

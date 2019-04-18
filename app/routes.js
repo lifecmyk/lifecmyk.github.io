@@ -9,8 +9,16 @@ app.config(($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) => {
   $stateProvider.state("home", {
     name: "home",
     url: "/home",
-    controller: "homeController",
-    templateUrl: "./app/home/home.html",
+    views: {
+      navbar: {
+        templateUrl: "./app/navbar/navbar.html",
+        controller: "navController"
+      },
+      content: {
+        templateUrl: "./app/home/home.html",
+        controller: "homeController"
+      }
+    },
     resolve: {
       loadCss: $css => {
         return $css.add([
@@ -23,7 +31,10 @@ app.config(($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) => {
           }
         ]);
       },
-      loadCtrl: $ocLazyLoad => {
+      navCtrl: $ocLazyLoad => {
+        return $ocLazyLoad.load("./assets/js/navbar.js");
+      },
+      contentCtrl: $ocLazyLoad => {
         return $ocLazyLoad.load("./assets/js/home.js");
       }
     }

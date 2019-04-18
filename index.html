@@ -55,8 +55,8 @@
   </head>
 
   <body>
-    <nav ng-controller="navController" ng-include="'./app/navbar/navbar.html'" class="row"></nav>
-    <main ui-view class="swiper-container"></main>
+    <nav ui-view="navbar" class="row"></nav>
+    <main ui-view="content" class="swiper-container"></main>
 
     <!-- Vendors -->
     <script src="./assets/js/fawn.js"></script>
