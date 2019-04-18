@@ -4,7 +4,7 @@ angular.module("app").controller("navController", function($scope, $timeout, loc
   $scope.lang = local.lang;
   $scope.changeLang = local.change;
   
-  $scope.welcome = false;
+  $scope.welcome = true;
 
   $timeout(() => {
     $scope.welcome = false;
