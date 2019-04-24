@@ -7,7 +7,7 @@
   <li ng-if="lang === 'es'" ng-click="scrollTo(2)">Catering y Eventos</li>
   <li ng-if="lang === 'es'" ng-click="scrollTo(3)">Gastrolab</li>
   <li ng-if="lang === 'es'" ng-click="scrollTo(4)">Somos lo que comemos</li>
-  <li ng-if="lang === 'es'" ng-click="scrollTo(5)">Sello Estrella</li>
+  <li ng-if="lang === 'es'" ng-click="scrollTo(5)">Star Seal</li>
   <li ng-if="lang === 'es'" ng-click="scrollTo(6)">Videos</li>
   <li ng-if="lang === 'es'" ng-click="scrollTo(7)">Espacios y Colaboraciones</li>
   <li ng-if="lang === 'es'" ng-click="scrollTo(8)">Contacta</li>
@@ -18,14 +18,14 @@
   <li ng-if="lang === 'en'" ng-click="scrollTo(4)">We are what we eat</li>
   <li ng-if="lang === 'en'" ng-click="scrollTo(5)">Star Seal</li>
   <li ng-if="lang === 'en'" ng-click="scrollTo(6)">Videos</li>
-  <li ng-if="lang === 'en'" ng-click="scrollTo(7)">Spaces & Colaborations</li>
+  <li ng-if="lang === 'en'" ng-click="scrollTo(7)">Spaces & Collaborations</li>
   <li ng-if="lang === 'en'" ng-click="scrollTo(8)">Contact us</li>
 
   <li ng-if="lang === 'ch'" ng-click="scrollTo(1)">自1967年以来</li>
   <li ng-if="lang === 'ch'" ng-click="scrollTo(2)">餐饮与活动</li>
   <li ng-if="lang === 'ch'" ng-click="scrollTo(3)">Gastrolab</li>
   <li ng-if="lang === 'ch'" ng-click="scrollTo(4)">我们就是吃的东西</li>
-  <li ng-if="lang === 'ch'" ng-click="scrollTo(5)">星海豹</li>
+  <li ng-if="lang === 'ch'" ng-click="scrollTo(5)">Star Seal</li>
   <li ng-if="lang === 'ch'" ng-click="scrollTo(6)">影片</li>
   <li ng-if="lang === 'ch'" ng-click="scrollTo(7)">空间与合作</li>
   <li ng-if="lang === 'ch'" ng-click="scrollTo(8)">联系我们</li>
@@ -44,7 +44,7 @@
     <li ng-if="lang === 'es'" ng-click="scrollTo(2)">Catering y Eventos</li>
     <li ng-if="lang === 'es'" ng-click="scrollTo(3)">Gastrolab</li>
     <li ng-if="lang === 'es'" ng-click="scrollTo(4)">Somos lo que comemos</li>
-    <li ng-if="lang === 'es'" ng-click="scrollTo(5)">Sello Estrella</li>
+    <li ng-if="lang === 'es'" ng-click="scrollTo(5)">Star Seal</li>
     <li ng-if="lang === 'es'" ng-click="scrollTo(6)">Videos</li>
     <li ng-if="lang === 'es'" ng-click="scrollTo(7)">Espacios y Colaboraciones</li>
     <li ng-if="lang === 'es'" ng-click="scrollTo(8)">Contacta</li>
@@ -62,10 +62,16 @@
     <li ng-if="lang === 'ch'" ng-click="scrollTo(2)">餐饮与活动</li>
     <li ng-if="lang === 'ch'" ng-click="scrollTo(3)">Gastrolab</li>
     <li ng-if="lang === 'ch'" ng-click="scrollTo(4)">我们就是吃的东西</li>
-    <li ng-if="lang === 'ch'" ng-click="scrollTo(5)">星海豹</li>
+    <li ng-if="lang === 'ch'" ng-click="scrollTo(5)">Star Seal</li>
     <li ng-if="lang === 'ch'" ng-click="scrollTo(6)">影片</li>
     <li ng-if="lang === 'ch'" ng-click="scrollTo(7)">空间与合作</li>
     <li ng-if="lang === 'ch'" ng-click="scrollTo(8)">联系我们</li>
+
+    <li class="lang flex f-center">
+      <img ng-click="toLang('es')" ng-src="../../assets/img/es.svg" alt="es" />
+      <img ng-click="toLang('en')" ng-src="../../assets/img/en.svg" alt="en" />
+      <img ng-click="toLang('ch')" ng-src="../../assets/img/ch.svg" alt="ch" />
+    </li>
   </ul>
 
   <div class="col submenu">

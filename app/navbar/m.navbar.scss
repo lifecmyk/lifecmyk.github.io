@@ -34,7 +34,7 @@ nav {
     transition: 0.5s;
 
     ul {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
 
     li {
@@ -47,6 +47,13 @@ nav {
 
       &:last-of-type {
         border-bottom: none;
+      }
+    }
+
+    .lang {
+      img {
+        width: 50px;
+        margin: 10px 10px 0 10px;
       }
     }
 

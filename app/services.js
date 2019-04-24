@@ -11,7 +11,7 @@ app.factory("local", $state => {
   if (userLang === "zh" || userLang === "zh-ZH" || userLang === "ZH" || userLang === "zh_ZH") {
     local.lang = "ch";
   }
-  
+
   info("Web is in (" + local.lang.toUpperCase() + ")");
 
   local.change = () => {
@@ -28,6 +28,12 @@ app.factory("local", $state => {
       info("Web is in (" + local.lang.toUpperCase() + ")");
       $state.reload();
     }
+  };
+
+  local.toLang = l => {
+    local.lang = l;
+    $state.reload();
+    info("Web is in (" + local.lang.toUpperCase() + ")");
   };
 
   return local;

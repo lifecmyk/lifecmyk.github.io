@@ -3,6 +3,7 @@ angular.module("app").controller("navController", function($scope, $timeout, loc
   
   $scope.lang = local.lang;
   $scope.changeLang = local.change;
+  $scope.toLang = local.toLang;
   
   $scope.welcome = true;
 
